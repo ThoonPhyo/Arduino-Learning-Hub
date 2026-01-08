@@ -1,0 +1,106 @@
+/* resetting rules */
+
+/* colors
+#008184
+#e47128
+*/
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: "Open Sans", sans-serif;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  background-color: #fff;
+}
+
+/* nav section */
+.navbar {
+  font-size: 1.1em;
+  background-image: url(images/nav_bg.png), url(images/nav_bg.png),
+    url(images/nav_bg_1.png), url(images/nav_bg_1.png);
+  background-size: contain, contain, contain, contain;
+  background-repeat: no-repeat, no-repeat, no-repeat, no-repeat;
+  background-position: bottom left, bottom right, right, top left;
+}
+
+/* link tabs */
+/* Selected */
+.active {
+  font-weight: bold;
+  border-bottom: 2px solid #00878f;
+  color: #00878f !important;
+}
+
+/* Hover */
+.nav-link:hover {
+  font-weight: bold;
+  color: #e47128 !important;
+}
+
+/* web page section */
+.web_page {
+  /* background-image: url(images/bg.png);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: top; */
+}
+
+.page_header {
+  margin-bottom: 100px;
+}
+.page_header .page_title {
+  font-weight: bold;
+  margin: 0;
+  text-align: center;
+  padding: clamp(3.75rem, 3.21rem + 2.68vw, 5rem) 20px 1rem;
+  line-height: 1.1;
+}
+
+.page_header .msg {
+  text-align: center;
+  font-size: 1.1em;
+  margin: 0 auto;
+}
+
+/* cards container */
+.cards_container {
+  /* border: 2px solid red; */
+  margin: 0 auto;
+  max-width: 1060px;
+}
+
+/* card body */
+.card {
+  min-height: 260px;
+  max-width: 480px;
+  background-image: url(images/bg_2.png), url(images/bg_2.png);
+  background-size: cover, cover;
+  background-repeat: no-repeat, no-repeat;
+  background-position: top, bottom;
+  box-shadow: 10px 10px 0px 0px #e8e8e9
+  /* transition: box-shadow 0.2s cubic-bezier(0, 0, 0.5, 1);
+  transform: translateY(0); */
+}
+
+.card p{
+  color: #5D6A6B;
+  font-size: 0.9em;
+}
+
+.card_image {
+  float: right;
+  width: 150px;
+}
+
+/* card hover */
+.cads .card:hover {
+  transition: box-shadow 0.2s cubic-bezier(0, 0, 0.5, 1);
+  transform: translateY(0);
+}
+
