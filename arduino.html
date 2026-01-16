@@ -169,7 +169,7 @@
           <li class="nav-item" role="presentation">
             <button
               class="nav-link active border rounded-5 my-1 mx-1 btn btn-light opacity-76"
-              id="pills-home-tab"
+              id="pills-all-tab"
               data-bs-toggle="pill"
               data-bs-target="#pills-all"
               type="button"
@@ -185,12 +185,12 @@
           <li class="nav-item" role="presentation">
             <button
               class="nav-link border rounded-5 my-1 mx-1 btn btn-light opacity-76"
-              id="pills-home-tab"
+              id="pills-introduction-tab"
               data-bs-toggle="pill"
-              data-bs-target="#pills-home"
+              data-bs-target="#pills-introduction"
               type="button"
               role="tab"
-              aria-controls="pills-home"
+              aria-controls="pills-introduction"
               aria-selected="true"
             >
               Introduction
@@ -201,12 +201,12 @@
           <li class="nav-item" role="presentation">
             <button
               class="nav-link border rounded-5 my-1 mx-1 btn btn-light opacity-76"
-              id="pills-home-tab"
+              id="pills-software-tab"
               data-bs-toggle="pill"
-              data-bs-target="#pills-home"
+              data-bs-target="#pills-software"
               type="button"
               role="tab"
-              aria-controls="pills-home"
+              aria-controls="pills-software"
               aria-selected="true"
             >
               Software
@@ -217,12 +217,12 @@
           <li class="nav-item" role="presentation">
             <button
               class="nav-link border rounded-5 my-1 mx-1 btn btn-light opacity-76"
-              id="pills-home-tab"
+              id="pills-programming-tab"
               data-bs-toggle="pill"
-              data-bs-target="#pills-home"
+              data-bs-target="#pills-programming"
               type="button"
               role="tab"
-              aria-controls="pills-home"
+              aria-controls="pills-programming"
               aria-selected="true"
             >
               Programming
@@ -233,12 +233,12 @@
           <li class="nav-item" role="presentation">
             <button
               class="nav-link border rounded-5 my-1 mx-1 btn btn-light opacity-76"
-              id="pills-home-tab"
+              id="pills-basic-pj-tab"
               data-bs-toggle="pill"
-              data-bs-target="#pills-home"
+              data-bs-target="#pills-basic-pj"
               type="button"
               role="tab"
-              aria-controls="pills-home"
+              aria-controls="pills-basic-pj"
               aria-selected="true"
             >
               Basic Projects
@@ -250,7 +250,7 @@
 
     <!-- nav tabs' contents -->
     <div class="tab-content px-4 px-md-5 py-5" id="pills-tabContent">
-      <!-- all content -->
+      <!-- all tab content -->
       <div
         class="tab-pane fade show active"
         id="pills-all"
@@ -258,174 +258,1039 @@
         aria-labelledby="pills-all-tab"
         tabindex="0"
       >
-        <h2 class="d-flex flex-wrap section-title text-start mb-5">
-          Introduction
-        </h2>
+        <!-- Introduction section  -->
+        <section class="mb-5 introduction-section-all">
+          <h2 class="d-flex flex-wrap section-title text-start mb-5">
+            Introduction
+          </h2>
 
-        <!-- card container  -->
-        <div class="row row-cols-1 row-cols-lg-3 row-cols-md-2 g-4 px-sm-4">
-          <!-- card-1  -->
-          <div class="col text-center">
-            <div
-              class="card border-light px-md-5 py-md-4 px-4 py-3 text-center arduino-card"
-            >
-              <img
-                src="https://www.datocms-assets.com/42182/1581423993-arduino-uno-03.png?auto=format&max-w=1600"
-                class="card-img-top sm-img-fluid rounded-3"
-                alt="..."
-              />
-              <div class="card-body">
-                <h5 class="card-title text-start text-uppercase">
-                  1️⃣ What is Arduino?
-                </h5>
-                <p class="card-text text-start fs-6 fw-light text-muted">
-                  Arduino is an open-source electronics platform to build
-                  interactive projects with hardware and software.
-                </p>
+          <!-- card container  -->
+          <div class="row row-cols-1 row-cols-lg-3 row-cols-md-2 g-4 px-sm-4">
+            <!-- card-1  -->
+            <div class="col text-center">
+              <div
+                class="card border-light px-md-5 py-md-4 px-4 py-3 text-center arduino-card"
+              >
+                <img
+                  src="https://www.electronicwings.com/storage/PlatformSection/TopicContent/218/icon/1Introduction%20to%20Arduino%20.jpg"
+                  class="card-img-top sm-img-fluid rounded-3"
+                  alt="..."
+                />
+                <div class="card-body">
+                  <h5 class="card-title text-start">What is Arduino?</h5>
+                  <p class="card-text text-start fs-6 fw-light text-muted">
+                    Arduino is an open-source electronics platform to build
+                    interactive projects with hardware and software.
+                  </p>
+                </div>
+              </div>
+            </div>
+
+            <!-- card-2 -->
+            <div class="col text-center">
+              <div
+                class="card border-light px-md-5 py-md-4 px-4 py-3 text-center arduino-card"
+              >
+                <img
+                  src="https://www.electronicwings.com/storage/PlatformSection/TopicContent/193/icon/Arduino%20getting%20Started.jpg"
+                  class="card-img-top sm-img-fluid rounded-3"
+                  alt="..."
+                />
+                <div class="card-body">
+                  <h5 class="card-title text-start">
+                    Getting Started With Arduino Board
+                  </h5>
+                  <p class="card-text text-start fs-6 fw-light text-muted">
+                    Learn what Arduino is, how the board works, and how to begin
+                    your first hardware project.
+                  </p>
+                </div>
+              </div>
+            </div>
+
+            <!-- card-3 -->
+            <div class="col text-center">
+              <div
+                class="card border-light px-md-5 py-md-4 px-4 py-3 text-center arduino-card"
+              >
+                <img
+                  src="https://www.electronicwings.com/storage/PlatformSection/TopicContent/406/icon/6USART%20in%20Arduino%20UNO.jpg"
+                  class="card-img-top sm-img-fluid rounded-3"
+                  alt="..."
+                />
+                <div class="card-body">
+                  <h5 class="card-title text-start">USART in Arduino Uno</h5>
+                  <p class="card-text text-start fs-6 fw-light text-muted">
+                    Learn serial communication using USART to send and receive
+                    data between devices.
+                  </p>
+                </div>
+              </div>
+            </div>
+
+            <!-- card-4 -->
+            <div class="col text-center">
+              <div
+                class="card border-light px-md-5 py-md-4 px-4 py-3 text-center arduino-card"
+              >
+                <img
+                  src="https://www.electronicwings.com/storage/PlatformSection/TopicContent/408/icon/Arduino%20PWM.gif"
+                  class="card-img-top sm-img-fluid rounded-3"
+                  alt="..."
+                />
+                <div class="card-body">
+                  <h5 class="card-title text-start">PWM in Arduino</h5>
+                  <p class="card-text text-start fs-6 fw-light text-muted">
+                    Use PWM signals to control motor speed and adjust LED
+                    brightness smoothly.
+                  </p>
+                </div>
+              </div>
+            </div>
+
+            <!-- card-5 -->
+            <div class="col text-center">
+              <div
+                class="card border-light px-md-5 py-md-4 px-4 py-3 text-center arduino-card"
+              >
+                <img
+                  src="https://www.electronicwings.com/storage/PlatformSection/TopicContent/405/icon/Digital%20GPIO%20of%20Arduino.png"
+                  class="card-img-top sm-img-fluid rounded-3"
+                  alt="..."
+                />
+                <div class="card-body">
+                  <h5 class="card-title text-start">Digital GPIO of Arduino</h5>
+                  <p class="card-text text-start fs-6 fw-light text-muted">
+                    Understand digital input and output pins to control LEDs,
+                    buttons, and basic sensors.
+                  </p>
+                </div>
+              </div>
+            </div>
+
+            <!-- card-6 -->
+            <div class="col text-center">
+              <div
+                class="card border-light px-md-5 py-md-4 px-4 py-3 text-center arduino-card"
+              >
+                <img
+                  src="https://www.electronicwings.com/storage/PlatformSection/TopicContent/219/icon/3Using%20Arduino%20IDE.png"
+                  class="card-img-top sm-img-fluid rounded-3"
+                  alt="..."
+                />
+                <div class="card-body">
+                  <h5 class="card-title text-start">Using Arduino IDE</h5>
+                  <p class="card-text text-start fs-6 fw-light text-muted">
+                    Arduino IDE is the software used to write, compile, and
+                    upload code to Arduino boards.
+                  </p>
+                </div>
               </div>
             </div>
           </div>
+        </section>
 
-          <!-- card-2 -->
-          <div class="col text-center">
-            <div
-              class="card border-light px-md-5 py-md-4 px-4 py-3 text-center arduino-card"
-            >
-              <img
-                src="https://www.datocms-assets.com/42182/1581423993-arduino-uno-03.png?auto=format&max-w=1600"
-                class="card-img-top sm-img-fluid rounded-3"
-                alt="..."
-              />
-              <div class="card-body">
-                <h5 class="card-title text-start text-uppercase">
-                  2️⃣ Arduino Boards
-                </h5>
-                <p class="card-text text-start fs-6 fw-light text-muted">
-                  Arduino boards come in different types and sizes, each
-                  designed for specific projects and power requirements.
-                </p>
+        <!-- Software section -->
+        <section class="mb-5 software-section-all">
+          <h2 class="d-flex flex-wrap section-title text-start mb-5">
+            Software Setup
+          </h2>
+
+          <!-- card container  -->
+          <div class="row row-cols-1 row-cols-lg-3 row-cols-md-2 g-4 px-sm-4">
+            <!-- card-1  -->
+            <div class="col text-center">
+              <div
+                class="card border-light px-md-5 py-md-4 px-4 py-3 text-center arduino-card"
+              >
+                <img
+                  src="https://www.datocms-assets.com/42182/1591876497-aesk-ch00-sc01-callout.png?auto=format&max-w=1600"
+                  class="card-img-top sm-img-fluid rounded-3"
+                  alt="..."
+                />
+                <div class="card-body">
+                  <h5 class="card-title text-start">
+                    Explore the features in the IDE
+                  </h5>
+                  <p class="card-text text-start fs-6 fw-light text-muted">
+                    Explore some of the features, functions, and tools that are
+                    provided in the IDE.
+                  </p>
+                </div>
+              </div>
+            </div>
+
+            <!-- card-2  -->
+            <div class="col text-center">
+              <div
+                class="card border-light px-md-5 py-md-4 px-4 py-3 text-center arduino-card"
+              >
+                <img
+                  src="https://www.datocms-assets.com/42182/1582814099-aesk-ch00-sc02.png?auto=format&max-w=1600"
+                  class="card-img-top sm-img-fluid rounded-3"
+                  alt="..."
+                />
+                <div class="card-body">
+                  <h5 class="card-title text-start">
+                    Using the Menu of the IDE
+                  </h5>
+                  <p class="card-text text-start fs-6 fw-light text-muted">
+                    From the File menu, choose Examples > 01.Basics > Blink. The
+                    Blink sketch will open in a new window.
+                  </p>
+                </div>
+              </div>
+            </div>
+
+            <!-- card-3  -->
+            <div class="col text-center">
+              <div
+                class="card border-light px-md-5 py-md-4 px-4 py-3 text-center arduino-card"
+              >
+                <img
+                  src="https://www.datocms-assets.com/42182/1582814285-aesk-ch00-sc04.png?auto=format&max-w=1600"
+                  class="card-img-top sm-img-fluid rounded-3"
+                  alt="..."
+                />
+                <div class="card-body">
+                  <h5 class="card-title text-start">
+                    Connecting with the Board
+                  </h5>
+                  <p class="card-text text-start fs-6 fw-light text-muted">
+                    Locate the USB cable. Plug the flat end of the USB cable
+                    into your computer. Plug the other end of the cable into the
+                    USB port on the Arduino board.
+                  </p>
+                </div>
+              </div>
+            </div>
+
+            <!-- card-4  -->
+            <div class="col text-center">
+              <div
+                class="card border-light px-md-5 py-md-4 px-4 py-3 text-center arduino-card"
+              >
+                <img
+                  src="https://www.datocms-assets.com/42182/1582814303-aesk-ch00-sc05.png?auto=format&max-w=1600"
+                  class="card-img-top sm-img-fluid rounded-3"
+                  alt="..."
+                />
+                <div class="card-body">
+                  <h5 class="card-title text-start">Uploading the Program</h5>
+                  <p class="card-text text-start fs-6 fw-light text-muted">
+                    In the Arduino IDE, click the Upload button to transfer the
+                    code to the Arduino board.
+                  </p>
+                </div>
               </div>
             </div>
           </div>
+        </section>
 
-          <!-- card-3 -->
-          <div class="col text-center">
-            <div
-              class="card border-light px-md-5 py-md-4 px-4 py-3 text-center arduino-card"
-            >
-              <img
-                src="https://www.datocms-assets.com/42182/1581423993-arduino-uno-03.png?auto=format&max-w=1600"
-                class="card-img-top sm-img-fluid rounded-3"
-                alt="..."
-              />
-              <div class="card-body">
-                <h5 class="card-title text-start text-uppercase">
-                  3️⃣ Microcontroller Basics
-                </h5>
-                <p class="card-text text-start fs-6 fw-light text-muted">
-                  The microcontroller is the brain of Arduino that processes
-                  data and controls connected components.
-                </p>
+        <!-- Programming section -->
+        <section class="programming-section-all">
+          <h2 class="d-flex flex-wrap section-title text-start mb-5">
+            Programming
+          </h2>
+
+          <!-- card container  -->
+          <div class="row row-cols-1 row-cols-lg-3 row-cols-md-2 g-4 px-sm-4">
+            <!-- card-1 -->
+            <div class="col text-center">
+              <div
+                class="card border-light px-md-5 py-md-4 px-4 py-3 text-center arduino-card"
+              >
+                <img
+                  src="https://www.electronicwings.com/storage/PlatformSection/TopicContent/221/icon/Basic%20functions%20related%20to%20startup%20and%20GPIO%20in%20Arduino.png"
+                  class="card-img-top sm-img-fluid rounded-3"
+                  alt="..."
+                />
+                <div class="card-body">
+                  <h5 class="card-title text-start">
+                    Basic functions related to startup and GPIO in Arduino
+                  </h5>
+                  <p class="card-text text-start fs-6 fw-light text-muted">
+                    Let’s see some basic functions related to Startup and GPIO
+                    that are frequently used in Arduino IDE.
+                  </p>
+                </div>
+              </div>
+            </div>
+
+            <!-- card-2 -->
+            <div class="col text-center">
+              <div
+                class="card border-light px-md-5 py-md-4 px-4 py-3 text-center arduino-card"
+              >
+                <img
+                  src="https://www.electronicwings.com/storage/PlatformSection/TopicContent/318/icon/functions%20related%20to%20Serial%20Communication.png"
+                  class="card-img-top sm-img-fluid rounded-3"
+                  alt="..."
+                />
+                <div class="card-body">
+                  <h5 class="card-title text-start">
+                    Basic functions related to Serial Communication in Arduino
+                  </h5>
+                  <p class="card-text text-start fs-6 fw-light text-muted">
+                    Let’s see some basic functions related to serial
+                    communication that are frequently used in Arduino IDE.
+                  </p>
+                </div>
+              </div>
+            </div>
+
+            <!-- card-3 -->
+            <div class="col text-center">
+              <div
+                class="card border-light px-md-5 py-md-4 px-4 py-3 text-center arduino-card"
+              >
+                <img
+                  src="https://www.electronicwings.com/storage/PlatformSection/TopicContent/319/icon/Basic%20functions%20related%20to%20Time%20and%20Interrupts%20in%20arduino.png"
+                  class="card-img-top sm-img-fluid rounded-3"
+                  alt="..."
+                />
+                <div class="card-body">
+                  <h5 class="card-title text-start">
+                    Basic functions related to Time and Interrupts in Arduino
+                  </h5>
+                  <p class="card-text text-start fs-6 fw-light text-muted">
+                    Let’s see some basic functions related to time and
+                    interrupts that are frequently used in Arduino IDE.oards.
+                  </p>
+                </div>
+              </div>
+            </div>
+
+            <!-- card-4 -->
+            <div class="col text-center">
+              <div
+                class="card border-light px-md-5 py-md-4 px-4 py-3 text-center arduino-card"
+              >
+                <img
+                  src="https://www.electronicwings.com/storage/PlatformSection/TopicContent/410/icon/I2C%20in%20Arduino.png"
+                  class="card-img-top sm-img-fluid rounded-3"
+                  alt="..."
+                />
+                <div class="card-body">
+                  <h5 class="card-title text-start">Arduino I2C</h5>
+                  <p class="card-text text-start fs-6 fw-light text-muted">
+                    I2C (Inter-Integrated Circuit) is a serial bus interface
+                    connection protocol. It is also called a TWI (two wire
+                    interface) since it uses only two wires for communication.
+                  </p>
+                </div>
               </div>
             </div>
           </div>
+        </section>
 
-          <!-- card-4 -->
-          <div class="col text-center">
-            <div
-              class="card border-light px-md-5 py-md-4 px-4 py-3 text-center arduino-card"
-            >
-              <img
-                src="https://www.datocms-assets.com/42182/1581423993-arduino-uno-03.png?auto=format&max-w=1600"
-                class="card-img-top sm-img-fluid rounded-3"
-                alt="..."
-              />
-              <div class="card-body">
-                <h5 class="card-title text-start text-uppercase">
-                  4️⃣ Power & Voltage
-                </h5>
-                <p class="card-text text-start fs-6 fw-light text-muted">
-                  Learn how Arduino is powered safely using USB, adapters, or
-                  external power sources.
-                </p>
+        <!-- Basic Projects section -->
+        <section class="basic-pj-section-all">
+          <h2 class="d-flex flex-wrap section-title text-start mb-5">
+            Basic Projects
+          </h2>
+
+          <!-- card container  -->
+          <div class="row row-cols-1 row-cols-lg-3 row-cols-md-2 g-4 px-sm-4">
+            <!-- card-1  -->
+            <div class="col text-center">
+              <div
+                class="card border-light px-md-5 py-md-4 px-4 py-3 text-center arduino-card"
+              >
+                <img
+                  src="https://www.datocms-assets.com/42182/1581584661-aesk-ch03-ftz-01.png?auto=format&max-w=1600"
+                  class="card-img-top sm-img-fluid rounded-3"
+                  alt="..."
+                />
+                <div class="card-body">
+                  <h5 class="card-title text-start">Traffic Signals</h5>
+                  <p class="card-text text-start fs-6 fw-light text-muted">
+                    In this lesson, you’ll write programs to control the LEDs in
+                    the circuit, including a program for a traffic light.
+                  </p>
+                </div>
+              </div>
+            </div>
+
+            <!-- card-2 -->
+            <div class="col text-center">
+              <div
+                class="card border-light px-md-5 py-md-4 px-4 py-3 text-center arduino-card"
+              >
+                <img
+                  src="https://www.datocms-assets.com/42182/1592297058-aesk-ch04-ftz-02.png?auto=format&max-w=1600"
+                  class="card-img-top sm-img-fluid rounded-3"
+                  alt="..."
+                />
+                <div class="card-body">
+                  <h5 class="card-title text-start">Dimmer Switch</h5>
+                  <p class="card-text text-start fs-6 fw-light text-muted">
+                    In this lesson, you’ll investigate analog signals and how
+                    they can be used to control a circuit.
+                  </p>
+                </div>
+              </div>
+            </div>
+
+            <!-- card-3 -->
+            <div class="col text-center">
+              <div
+                class="card border-light px-md-5 py-md-4 px-4 py-3 text-center arduino-card"
+              >
+                <img
+                  src="https://www.datocms-assets.com/42182/1581339451-aesk-ch06-ftz-17.png?auto=format&max-w=1600"
+                  class="card-img-top sm-img-fluid rounded-3"
+                  alt="..."
+                />
+                <div class="card-body">
+                  <h5 class="card-title text-start">Sport Robot</h5>
+                  <p class="card-text text-start fs-6 fw-light text-muted">
+                    After learning how to build circuits that use a
+                    microcontroller, you´ll learn how to use a servo motor to
+                    create a simple sports robot.
+                  </p>
+                </div>
+              </div>
+            </div>
+
+            <!-- card-4 -->
+            <div class="col text-center">
+              <div
+                class="card border-light px-md-5 py-md-4 px-4 py-3 text-center arduino-card"
+              >
+                <img
+                  src="https://www.datocms-assets.com/42182/1591885703-aesk-ch07-ftz-1.png?auto=format&max-w=1600"
+                  class="card-img-top sm-img-fluid rounded-3"
+                  alt="..."
+                />
+                <div class="card-body">
+                  <h5 class="card-title text-start">Windshield Wipers</h5>
+                  <p class="card-text text-start fs-6 fw-light text-muted">
+                    In this lesson, you’ll continue to work with a servo to
+                    create a circuit that simulates a windshield wiper.
+                  </p>
+                </div>
+              </div>
+            </div>
+
+            <!-- card-5 -->
+            <div class="col text-center">
+              <div
+                class="card border-light px-md-5 py-md-4 px-4 py-3 text-center arduino-card"
+              >
+                <img
+                  src="https://www.datocms-assets.com/42182/1592394923-aesk-ch08-ftz-01-1.png?auto=format&max-w=1600"
+                  class="card-img-top sm-img-fluid rounded-3"
+                  alt="..."
+                />
+                <div class="card-body">
+                  <h5 class="card-title text-start">Musical Keyboard</h5>
+                  <p class="card-text text-start fs-6 fw-light text-muted">
+                    In this lesson, you’ll use a simple electronic component
+                    called a piezo buzzer to produce the sound by causing it to
+                    vibrate.
+                  </p>
+                </div>
+              </div>
+            </div>
+
+            <!-- card-6 -->
+            <div class="col text-center">
+              <div
+                class="card border-light px-md-5 py-md-4 px-4 py-3 text-center arduino-card"
+              >
+                <img
+                  src="https://www.datocms-assets.com/42182/1581596764-aesk-ch09-ftz-1.png?auto=format&max-w=1600"
+                  class="card-img-top sm-img-fluid rounded-3"
+                  alt="..."
+                />
+                <div class="card-body">
+                  <h5 class="card-title text-start">Light Sensor</h5>
+                  <p class="card-text text-start fs-6 fw-light text-muted">
+                    In this lesson, you’ll use your Arduino board and a device
+                    called a phototransistor to investigate electromagnetic
+                    waves – specifically visible light.
+                  </p>
+                </div>
+              </div>
+            </div>
+
+            <!-- card-7 -->
+            <div class="col text-center">
+              <div
+                class="card border-light px-md-5 py-md-4 px-4 py-3 text-center arduino-card"
+              >
+                <img
+                  src="https://www.datocms-assets.com/42182/1581609158-aesk-ch09-ftz-12.png?auto=format&max-w=1600"
+                  class="card-img-top sm-img-fluid rounded-3"
+                  alt="..."
+                />
+                <div class="card-body">
+                  <h5 class="card-title text-start">Light Wave Radar</h5>
+                  <p class="card-text text-start fs-6 fw-light text-muted">
+                    In this activity, you’ll program your light wave radar to
+                    scan the room and map the ambient light.
+                  </p>
+                </div>
+              </div>
+            </div>
+
+            <!-- card-8 -->
+            <div class="col text-center">
+              <div
+                class="card border-light px-md-5 py-md-4 px-4 py-3 text-center arduino-card"
+              >
+                <img
+                  src="https://www.datocms-assets.com/42182/1581511542-aesk-ch10-ftz-1.png?auto=format&max-w=1600"
+                  class="card-img-top sm-img-fluid rounded-3"
+                  alt="..."
+                />
+                <div class="card-body">
+                  <h5 class="card-title text-start">Smart Greenhouse</h5>
+                  <p class="card-text text-start fs-6 fw-light text-muted">
+                    In this lesson, you will design, build, and program a
+                    climate-control system for a greenhouse.
+                  </p>
+                </div>
               </div>
             </div>
           </div>
-
-          <!-- card-5 -->
-          <div class="col text-center">
-            <div
-              class="card border-light px-md-5 py-md-4 px-4 py-3 text-center arduino-card"
-            >
-              <img
-                src="https://www.datocms-assets.com/42182/1581423993-arduino-uno-03.png?auto=format&max-w=1600"
-                class="card-img-top sm-img-fluid rounded-3"
-                alt="..."
-              />
-              <div class="card-body">
-                <h5 class="card-title text-start text-uppercase">
-                  5️⃣ Pins Explained
-                </h5>
-                <p class="card-text text-start fs-6 fw-light text-muted">
-                  Arduino pins are used to connect sensors, modules, and output
-                  devices in your projects.
-                </p>
-              </div>
-            </div>
-          </div>
-
-          <!-- card-6 -->
-          <div class="col text-center">
-            <div
-              class="card border-light px-md-5 py-md-4 px-4 py-3 text-center arduino-card"
-            >
-              <img
-                src="https://www.datocms-assets.com/42182/1581423993-arduino-uno-03.png?auto=format&max-w=1600"
-                class="card-img-top sm-img-fluid rounded-3"
-                alt="..."
-              />
-              <div class="card-body">
-                <h5 class="card-title text-start text-uppercase">
-                  6️⃣ Arduino IDE
-                </h5>
-                <p class="card-text text-start fs-6 fw-light text-muted">
-                  Arduino IDE is the software used to write, compile, and upload
-                  code to Arduino boards.
-                </p>
-              </div>
-            </div>
-          </div>
-        </div>
+        </section>
       </div>
 
+      <!-- introduction tab content -->
       <div
-        class="tab-pane fade"
-        id="pills-profile"
+        class="tab-pane fade active"
+        id="pills-introduction"
         role="tabpanel"
-        aria-labelledby="pills-profile-tab"
+        aria-labelledby="pills-introduction-tab"
         tabindex="0"
       >
-        ...
+        <!-- Introduction tab content  -->
+        <section class="mb-5">
+          <h2 class="d-flex flex-wrap section-title text-start mb-5">
+            Introduction
+          </h2>
+
+          <!-- card container  -->
+          <div class="row row-cols-1 row-cols-lg-3 row-cols-md-2 g-4 px-sm-4">
+            <!-- card-1  -->
+            <div class="col text-center">
+              <div
+                class="card border-light px-md-5 py-md-4 px-4 py-3 text-center arduino-card"
+              >
+                <img
+                  src="https://www.electronicwings.com/storage/PlatformSection/TopicContent/218/icon/1Introduction%20to%20Arduino%20.jpg"
+                  class="card-img-top sm-img-fluid rounded-3"
+                  alt="..."
+                />
+                <div class="card-body">
+                  <h5 class="card-title text-start">What is Arduino?</h5>
+                  <p class="card-text text-start fs-6 fw-light text-muted">
+                    Arduino is an open-source electronics platform to build
+                    interactive projects with hardware and software.
+                  </p>
+                </div>
+              </div>
+            </div>
+
+            <!-- card-2 -->
+            <div class="col text-center">
+              <div
+                class="card border-light px-md-5 py-md-4 px-4 py-3 text-center arduino-card"
+              >
+                <img
+                  src="https://www.electronicwings.com/storage/PlatformSection/TopicContent/193/icon/Arduino%20getting%20Started.jpg"
+                  class="card-img-top sm-img-fluid rounded-3"
+                  alt="..."
+                />
+                <div class="card-body">
+                  <h5 class="card-title text-start">
+                    Getting Started With Arduino Board
+                  </h5>
+                  <p class="card-text text-start fs-6 fw-light text-muted">
+                    Learn what Arduino is, how the board works, and how to begin
+                    your first hardware project.
+                  </p>
+                </div>
+              </div>
+            </div>
+
+            <!-- card-3 -->
+            <div class="col text-center">
+              <div
+                class="card border-light px-md-5 py-md-4 px-4 py-3 text-center arduino-card"
+              >
+                <img
+                  src="https://www.electronicwings.com/storage/PlatformSection/TopicContent/406/icon/6USART%20in%20Arduino%20UNO.jpg"
+                  class="card-img-top sm-img-fluid rounded-3"
+                  alt="..."
+                />
+                <div class="card-body">
+                  <h5 class="card-title text-start">USART in Arduino Uno</h5>
+                  <p class="card-text text-start fs-6 fw-light text-muted">
+                    Learn serial communication using USART to send and receive
+                    data between devices.
+                  </p>
+                </div>
+              </div>
+            </div>
+
+            <!-- card-4 -->
+            <div class="col text-center">
+              <div
+                class="card border-light px-md-5 py-md-4 px-4 py-3 text-center arduino-card"
+              >
+                <img
+                  src="https://www.electronicwings.com/storage/PlatformSection/TopicContent/408/icon/Arduino%20PWM.gif"
+                  class="card-img-top sm-img-fluid rounded-3"
+                  alt="..."
+                />
+                <div class="card-body">
+                  <h5 class="card-title text-start">PWM in Arduino</h5>
+                  <p class="card-text text-start fs-6 fw-light text-muted">
+                    Use PWM signals to control motor speed and adjust LED
+                    brightness smoothly.
+                  </p>
+                </div>
+              </div>
+            </div>
+
+            <!-- card-5 -->
+            <div class="col text-center">
+              <div
+                class="card border-light px-md-5 py-md-4 px-4 py-3 text-center arduino-card"
+              >
+                <img
+                  src="https://www.electronicwings.com/storage/PlatformSection/TopicContent/405/icon/Digital%20GPIO%20of%20Arduino.png"
+                  class="card-img-top sm-img-fluid rounded-3"
+                  alt="..."
+                />
+                <div class="card-body">
+                  <h5 class="card-title text-start">Digital GPIO of Arduino</h5>
+                  <p class="card-text text-start fs-6 fw-light text-muted">
+                    Understand digital input and output pins to control LEDs,
+                    buttons, and basic sensors.
+                  </p>
+                </div>
+              </div>
+            </div>
+
+            <!-- card-6 -->
+            <div class="col text-center">
+              <div
+                class="card border-light px-md-5 py-md-4 px-4 py-3 text-center arduino-card"
+              >
+                <img
+                  src="https://www.electronicwings.com/storage/PlatformSection/TopicContent/219/icon/3Using%20Arduino%20IDE.png"
+                  class="card-img-top sm-img-fluid rounded-3"
+                  alt="..."
+                />
+                <div class="card-body">
+                  <h5 class="card-title text-start">Using Arduino IDE</h5>
+                  <p class="card-text text-start fs-6 fw-light text-muted">
+                    Arduino IDE is the software used to write, compile, and
+                    upload code to Arduino boards.
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
       </div>
 
+      <!-- software tab content -->
       <div
         class="tab-pane fade"
-        id="pills-contact"
+        id="pills-software"
         role="tabpanel"
-        aria-labelledby="pills-contact-tab"
+        aria-labelledby="pills-software-tab"
         tabindex="0"
       >
-        ...
+        <!-- Software tab content -->
+        <section class="mb-5 software-section-all">
+          <h2 class="d-flex flex-wrap section-title text-start mb-5">
+            Software Setup
+          </h2>
+
+          <!-- card container  -->
+          <div class="row row-cols-1 row-cols-lg-3 row-cols-md-2 g-4 px-sm-4">
+            <!-- card-1  -->
+            <div class="col text-center">
+              <div
+                class="card border-light px-md-5 py-md-4 px-4 py-3 text-center arduino-card"
+              >
+                <img
+                  src="https://www.datocms-assets.com/42182/1591876497-aesk-ch00-sc01-callout.png?auto=format&max-w=1600"
+                  class="card-img-top sm-img-fluid rounded-3"
+                  alt="..."
+                />
+                <div class="card-body">
+                  <h5 class="card-title text-start">
+                    Explore the features in the IDE
+                  </h5>
+                  <p class="card-text text-start fs-6 fw-light text-muted">
+                    Explore some of the features, functions, and tools that are
+                    provided in the IDE.
+                  </p>
+                </div>
+              </div>
+            </div>
+
+            <!-- card-2  -->
+            <div class="col text-center">
+              <div
+                class="card border-light px-md-5 py-md-4 px-4 py-3 text-center arduino-card"
+              >
+                <img
+                  src="https://www.datocms-assets.com/42182/1582814099-aesk-ch00-sc02.png?auto=format&max-w=1600"
+                  class="card-img-top sm-img-fluid rounded-3"
+                  alt="..."
+                />
+                <div class="card-body">
+                  <h5 class="card-title text-start">
+                    Using the Menu of the IDE
+                  </h5>
+                  <p class="card-text text-start fs-6 fw-light text-muted">
+                    From the File menu, choose Examples > 01.Basics > Blink. The
+                    Blink sketch will open in a new window.
+                  </p>
+                </div>
+              </div>
+            </div>
+
+            <!-- card-3  -->
+            <div class="col text-center">
+              <div
+                class="card border-light px-md-5 py-md-4 px-4 py-3 text-center arduino-card"
+              >
+                <img
+                  src="https://www.datocms-assets.com/42182/1582814285-aesk-ch00-sc04.png?auto=format&max-w=1600"
+                  class="card-img-top sm-img-fluid rounded-3"
+                  alt="..."
+                />
+                <div class="card-body">
+                  <h5 class="card-title text-start">
+                    Connecting with the Board
+                  </h5>
+                  <p class="card-text text-start fs-6 fw-light text-muted">
+                    Locate the USB cable. Plug the flat end of the USB cable
+                    into your computer. Plug the other end of the cable into the
+                    USB port on the Arduino board.
+                  </p>
+                </div>
+              </div>
+            </div>
+
+            <!-- card-4  -->
+            <div class="col text-center">
+              <div
+                class="card border-light px-md-5 py-md-4 px-4 py-3 text-center arduino-card"
+              >
+                <img
+                  src="https://www.datocms-assets.com/42182/1582814303-aesk-ch00-sc05.png?auto=format&max-w=1600"
+                  class="card-img-top sm-img-fluid rounded-3"
+                  alt="..."
+                />
+                <div class="card-body">
+                  <h5 class="card-title text-start">Uploading the Program</h5>
+                  <p class="card-text text-start fs-6 fw-light text-muted">
+                    In the Arduino IDE, click the Upload button to transfer the
+                    code to the Arduino board.
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
       </div>
 
+      <!-- Programming tab content -->
       <div
         class="tab-pane fade"
-        id="pills-disabled"
+        id="pills-programming"
         role="tabpanel"
-        aria-labelledby="pills-disabled-tab"
+        aria-labelledby="pills-programming-tab"
         tabindex="0"
       >
-        ...
+        <!-- Programming tab content -->
+        <section class="programming-section-all">
+          <h2 class="d-flex flex-wrap section-title text-start mb-5">
+            Programming
+          </h2>
+
+          <!-- card container  -->
+          <div class="row row-cols-1 row-cols-lg-3 row-cols-md-2 g-4 px-sm-4">
+            <!-- card-1 -->
+            <div class="col text-center">
+              <div
+                class="card border-light px-md-5 py-md-4 px-4 py-3 text-center arduino-card"
+              >
+                <img
+                  src="https://www.electronicwings.com/storage/PlatformSection/TopicContent/221/icon/Basic%20functions%20related%20to%20startup%20and%20GPIO%20in%20Arduino.png"
+                  class="card-img-top sm-img-fluid rounded-3"
+                  alt="..."
+                />
+                <div class="card-body">
+                  <h5 class="card-title text-start">
+                    Basic functions related to startup and GPIO in Arduino
+                  </h5>
+                  <p class="card-text text-start fs-6 fw-light text-muted">
+                    Let’s see some basic functions related to Startup and GPIO
+                    that are frequently used in Arduino IDE.
+                  </p>
+                </div>
+              </div>
+            </div>
+
+            <!-- card-2 -->
+            <div class="col text-center">
+              <div
+                class="card border-light px-md-5 py-md-4 px-4 py-3 text-center arduino-card"
+              >
+                <img
+                  src="https://www.electronicwings.com/storage/PlatformSection/TopicContent/318/icon/functions%20related%20to%20Serial%20Communication.png"
+                  class="card-img-top sm-img-fluid rounded-3"
+                  alt="..."
+                />
+                <div class="card-body">
+                  <h5 class="card-title text-start">
+                    Basic functions related to Serial Communication in Arduino
+                  </h5>
+                  <p class="card-text text-start fs-6 fw-light text-muted">
+                    Let’s see some basic functions related to serial
+                    communication that are frequently used in Arduino IDE.
+                  </p>
+                </div>
+              </div>
+            </div>
+
+            <!-- card-3 -->
+            <div class="col text-center">
+              <div
+                class="card border-light px-md-5 py-md-4 px-4 py-3 text-center arduino-card"
+              >
+                <img
+                  src="https://www.electronicwings.com/storage/PlatformSection/TopicContent/319/icon/Basic%20functions%20related%20to%20Time%20and%20Interrupts%20in%20arduino.png"
+                  class="card-img-top sm-img-fluid rounded-3"
+                  alt="..."
+                />
+                <div class="card-body">
+                  <h5 class="card-title text-start">
+                    Basic functions related to Time and Interrupts in Arduino
+                  </h5>
+                  <p class="card-text text-start fs-6 fw-light text-muted">
+                    Let’s see some basic functions related to time and
+                    interrupts that are frequently used in Arduino IDE.oards.
+                  </p>
+                </div>
+              </div>
+            </div>
+
+            <!-- card-4 -->
+            <div class="col text-center">
+              <div
+                class="card border-light px-md-5 py-md-4 px-4 py-3 text-center arduino-card"
+              >
+                <img
+                  src="https://www.electronicwings.com/storage/PlatformSection/TopicContent/410/icon/I2C%20in%20Arduino.png"
+                  class="card-img-top sm-img-fluid rounded-3"
+                  alt="..."
+                />
+                <div class="card-body">
+                  <h5 class="card-title text-start">Arduino I2C</h5>
+                  <p class="card-text text-start fs-6 fw-light text-muted">
+                    I2C (Inter-Integrated Circuit) is a serial bus interface
+                    connection protocol. It is also called a TWI (two wire
+                    interface) since it uses only two wires for communication.
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+      </div>
+
+      <!-- Basic Projects tab content -->
+      <div
+        class="tab-pane fade"
+        id="pills-basic-pj"
+        role="tabpanel"
+        aria-labelledby="pills-basic-pj-tab"
+        tabindex="0"
+      >
+        <!-- Basic Projects tab content -->
+        <section class="basic-pj-section-all">
+          <h2 class="d-flex flex-wrap section-title text-start mb-5">
+            Basic Projects
+          </h2>
+
+          <!-- card container  -->
+          <div class="row row-cols-1 row-cols-lg-3 row-cols-md-2 g-4 px-sm-4">
+            <!-- card-1  -->
+            <div class="col text-center">
+              <div
+                class="card border-light px-md-5 py-md-4 px-4 py-3 text-center arduino-card"
+              >
+                <img
+                  src="https://www.datocms-assets.com/42182/1581584661-aesk-ch03-ftz-01.png?auto=format&max-w=1600"
+                  class="card-img-top sm-img-fluid rounded-3"
+                  alt="..."
+                />
+                <div class="card-body">
+                  <h5 class="card-title text-start">Traffic Signals</h5>
+                  <p class="card-text text-start fs-6 fw-light text-muted">
+                    In this lesson, you’ll write programs to control the LEDs in
+                    the circuit, including a program for a traffic light.
+                  </p>
+                </div>
+              </div>
+            </div>
+
+            <!-- card-2 -->
+            <div class="col text-center">
+              <div
+                class="card border-light px-md-5 py-md-4 px-4 py-3 text-center arduino-card"
+              >
+                <img
+                  src="https://www.datocms-assets.com/42182/1592297058-aesk-ch04-ftz-02.png?auto=format&max-w=1600"
+                  class="card-img-top sm-img-fluid rounded-3"
+                  alt="..."
+                />
+                <div class="card-body">
+                  <h5 class="card-title text-start">Dimmer Switch</h5>
+                  <p class="card-text text-start fs-6 fw-light text-muted">
+                    In this lesson, you’ll investigate analog signals and how
+                    they can be used to control a circuit.
+                  </p>
+                </div>
+              </div>
+            </div>
+
+            <!-- card-3 -->
+            <div class="col text-center">
+              <div
+                class="card border-light px-md-5 py-md-4 px-4 py-3 text-center arduino-card"
+              >
+                <img
+                  src="https://www.datocms-assets.com/42182/1581339451-aesk-ch06-ftz-17.png?auto=format&max-w=1600"
+                  class="card-img-top sm-img-fluid rounded-3"
+                  alt="..."
+                />
+                <div class="card-body">
+                  <h5 class="card-title text-start">Sport Robot</h5>
+                  <p class="card-text text-start fs-6 fw-light text-muted">
+                    After learning how to build circuits that use a
+                    microcontroller, you´ll learn how to use a servo motor to
+                    create a simple sports robot.
+                  </p>
+                </div>
+              </div>
+            </div>
+
+            <!-- card-4 -->
+            <div class="col text-center">
+              <div
+                class="card border-light px-md-5 py-md-4 px-4 py-3 text-center arduino-card"
+              >
+                <img
+                  src="https://www.datocms-assets.com/42182/1591885703-aesk-ch07-ftz-1.png?auto=format&max-w=1600"
+                  class="card-img-top sm-img-fluid rounded-3"
+                  alt="..."
+                />
+                <div class="card-body">
+                  <h5 class="card-title text-start">Windshield Wipers</h5>
+                  <p class="card-text text-start fs-6 fw-light text-muted">
+                    In this lesson, you’ll continue to work with a servo to
+                    create a circuit that simulates a windshield wiper.
+                  </p>
+                </div>
+              </div>
+            </div>
+
+            <!-- card-5 -->
+            <div class="col text-center">
+              <div
+                class="card border-light px-md-5 py-md-4 px-4 py-3 text-center arduino-card"
+              >
+                <img
+                  src="https://www.datocms-assets.com/42182/1592394923-aesk-ch08-ftz-01-1.png?auto=format&max-w=1600"
+                  class="card-img-top sm-img-fluid rounded-3"
+                  alt="..."
+                />
+                <div class="card-body">
+                  <h5 class="card-title text-start">Musical Keyboard</h5>
+                  <p class="card-text text-start fs-6 fw-light text-muted">
+                    In this lesson, you’ll use a simple electronic component
+                    called a piezo buzzer to produce the sound by causing it to
+                    vibrate.
+                  </p>
+                </div>
+              </div>
+            </div>
+
+            <!-- card-6 -->
+            <div class="col text-center">
+              <div
+                class="card border-light px-md-5 py-md-4 px-4 py-3 text-center arduino-card"
+              >
+                <img
+                  src="https://www.datocms-assets.com/42182/1581596764-aesk-ch09-ftz-1.png?auto=format&max-w=1600"
+                  class="card-img-top sm-img-fluid rounded-3"
+                  alt="..."
+                />
+                <div class="card-body">
+                  <h5 class="card-title text-start">Light Sensor</h5>
+                  <p class="card-text text-start fs-6 fw-light text-muted">
+                    In this lesson, you’ll use your Arduino board and a device
+                    called a phototransistor to investigate electromagnetic
+                    waves – specifically visible light.
+                  </p>
+                </div>
+              </div>
+            </div>
+
+            <!-- card-7 -->
+            <div class="col text-center">
+              <div
+                class="card border-light px-md-5 py-md-4 px-4 py-3 text-center arduino-card"
+              >
+                <img
+                  src="https://www.datocms-assets.com/42182/1581609158-aesk-ch09-ftz-12.png?auto=format&max-w=1600"
+                  class="card-img-top sm-img-fluid rounded-3"
+                  alt="..."
+                />
+                <div class="card-body">
+                  <h5 class="card-title text-start">Light Wave Radar</h5>
+                  <p class="card-text text-start fs-6 fw-light text-muted">
+                    In this activity, you’ll program your light wave radar to
+                    scan the room and map the ambient light.
+                  </p>
+                </div>
+              </div>
+            </div>
+
+            <!-- card-8 -->
+            <div class="col text-center">
+              <div
+                class="card border-light px-md-5 py-md-4 px-4 py-3 text-center arduino-card"
+              >
+                <img
+                  src="https://www.datocms-assets.com/42182/1581511542-aesk-ch10-ftz-1.png?auto=format&max-w=1600"
+                  class="card-img-top sm-img-fluid rounded-3"
+                  alt="..."
+                />
+                <div class="card-body">
+                  <h5 class="card-title text-start">Smart Greenhouse</h5>
+                  <p class="card-text text-start fs-6 fw-light text-muted">
+                    In this lesson, you will design, build, and program a
+                    climate-control system for a greenhouse.
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
       </div>
     </div>
 
