@@ -16,18 +16,23 @@ html {
 }
 
 body {
-  background-color: #fff;
+  background-color: #fff !important;
 }
 
 /* nav section */
 .top_nav_bar {
-  background-color: #fff;
+  background-color: #F8F9FA;
   font-size: 1em;
-  background-image: url(images/nav_bg.png), url(images/nav_bg.png),
-    url(images/nav_bg_1.png), url(images/nav_bg_1.png);
+  background-image:
+    url(images/nav_bg_nobg.png), url(images/nav_bg_nobg.png),
+    url(images/nav_bg_nobg.png), url(images/nav_bg_nobg.png);
   background-size: contain, contain, contain, contain;
   background-repeat: no-repeat, no-repeat, no-repeat, no-repeat;
-  background-position: bottom left, bottom right, right, top left;
+  background-position:
+    bottom left,
+    bottom right,
+    right,
+    top left;
 
   /* postion sticky */
   /* position: sticky !important; */
@@ -127,7 +132,7 @@ body {
 }
 
 .index-card .card_btn {
-  transition: all 2s linear;
+  transition: all 0.2s linear;
 }
 
 /* hover: card */
@@ -220,7 +225,7 @@ footer {
 }
 
 .footer-about-us h4 {
-  color: #5D6A6B !important;
+  color: #5d6a6b !important;
   font-weight: bold !important;
   font-size: 16px !important;
   letter-spacing: 0.5px !important;

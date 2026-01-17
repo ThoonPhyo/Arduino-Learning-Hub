@@ -36,3 +36,24 @@ h2 {
   background-color: #fff;
   box-shadow: 0px 0px 8px 1px #d3d4d5;
 }
+
+/* footer section */
+
+.footer-ending {
+  background-color: #ecf1f1;
+  border-top: 1px solid #cfd8dc;
+}
+
+.upt-btn {
+  color: #5d6a6b !important;
+  /* font-size: 43px !important; */
+  position: fixed;
+  right: 15px;
+  bottom: 51px;
+  transition: all 0.7s ease;
+}
+
+.upt-btn:hover{
+  display: inline-block;
+  color: #00878f !important;
+}
