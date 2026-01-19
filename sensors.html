@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
@@ -12,8 +12,11 @@
       type="image/x-icon"
     />
 
-    <!-- link with style.css -->
+    <!-- Global CSS (used by all pages) -->
     <link rel="stylesheet" href="style.css" />
+
+    <!-- Sensor page specific CSS -->
+    <link rel="stylesheet" href="webpagestyles.css" />
 
     <!-- bootstrap css cdn -->
     <link
@@ -144,6 +147,1097 @@
         </div>
       </div>
     </nav>
+
+    <!-- Sensor Page sections -->
+
+    <!-- header -->
+    <header>
+      <div class="page-header text-center py-5 px-2 px-xxl-5">
+        <h1 class="fw-bold">Sensors for Arduino</h1>
+        <p class="text-muted col-md-8 mx-auto mb-md-5">
+          Explore commonly used sensors and learn how they detect temperature,
+          motion, light, gas, and environmental changes in Arduino projects.
+        </p>
+
+        <!-- card-nav tabs bar-->
+        <ul
+          class="nav nav-pills mb-3 justify-content-center"
+          id="pills-tab"
+          role="tablist"
+        >
+          <!-- All tab -->
+          <li class="nav-item" role="presentation">
+            <button
+              class="nav-link active border rounded-5 my-1 mx-1 btn btn-light opacity-76"
+              id="pills-all-tab"
+              data-bs-toggle="pill"
+              data-bs-target="#pills-all"
+              type="button"
+              role="tab"
+              aria-controls="pills-all"
+              aria-selected="true"
+            >
+              All
+            </button>
+          </li>
+
+          <!-- Temperature tab -->
+          <li class="nav-item" role="presentation">
+            <button
+              class="nav-link border rounded-5 my-1 mx-1 btn btn-light opacity-76"
+              id="pills-temperature-tab"
+              data-bs-toggle="pill"
+              data-bs-target="#pills-temperature"
+              type="button"
+              role="tab"
+              aria-controls="pills-temperature"
+              aria-selected="true"
+            >
+              Temperature
+            </button>
+          </li>
+
+          <!-- Motion & Distance tab -->
+          <li class="nav-item" role="presentation">
+            <button
+              class="nav-link border rounded-5 my-1 mx-1 btn btn-light opacity-76"
+              id="pills-motion-tab"
+              data-bs-toggle="pill"
+              data-bs-target="#pills-motion"
+              type="button"
+              role="tab"
+              aria-controls="pills-motion"
+              aria-selected="true"
+            >
+              Motion & Distance
+            </button>
+          </li>
+
+          <!-- Soil & Water tab -->
+          <li class="nav-item" role="presentation">
+            <button
+              class="nav-link border rounded-5 my-1 mx-1 btn btn-light opacity-76"
+              id="pills-soil-tab"
+              data-bs-toggle="pill"
+              data-bs-target="#pills-soil"
+              type="button"
+              role="tab"
+              aria-controls="pills-soil"
+              aria-selected="true"
+            >
+              Soil & Water
+            </button>
+          </li>
+
+          <!-- Others sensors tab -->
+          <li class="nav-item" role="presentation">
+            <button
+              class="nav-link border rounded-5 my-1 mx-1 btn btn-light opacity-76"
+              id="pills-other-tab"
+              data-bs-toggle="pill"
+              data-bs-target="#pills-other"
+              type="button"
+              role="tab"
+              aria-controls="pills-other"
+              aria-selected="true"
+            >
+              Other Sensors
+            </button>
+          </li>
+        </ul>
+      </div>
+    </header>
+
+    <!-- nav tabs' contents -->
+    <div class="tab-content px-4 px-md-5 py-5" id="pills-tabContent">
+      <!-- all tab content -->
+      <div
+        class="tab-pane fade show active"
+        id="pills-all"
+        role="tabpanel"
+        aria-labelledby="pills-all-tab"
+        tabindex="0"
+      >
+        <!-- temperature section  -->
+        <section class="mb-5 temperature-section-all">
+          <h2 class="d-flex flex-wrap section-title text-start mb-5">
+            Temperature Sensors
+          </h2>
+
+          <!-- card container  -->
+          <div class="row row-cols-1 row-cols-lg-3 row-cols-md-2 g-4 px-sm-4">
+            <!-- card-1  -->
+            <div class="col text-center">
+              <div
+                class="card border-light px-md-5 py-md-4 px-4 py-3 text-center arduino-card"
+              >
+                <img
+                  src="images/sensor_page/LM35 (2).png"
+                  class="card-img-top sm-img-fluid rounded-3"
+                  alt="..."
+                />
+                <div class="card-body">
+                  <h5 class="card-title text-start">
+                    LM35 – Analog Temperature Sensor
+                  </h5>
+                  <p class="card-text text-start fs-6 fw-light text-muted">
+                    Learn how the LM35 sensor measures temperature using analog
+                    output, how it works, and how to read temperature values
+                    with Arduino.
+                  </p>
+                </div>
+              </div>
+            </div>
+
+            <!-- card-2 -->
+            <div class="col text-center">
+              <div
+                class="card border-light px-md-5 py-md-4 px-4 py-3 text-center arduino-card"
+              >
+                <img
+                  src="images/sensor_page/dht11 (2).png"
+                  class="card-img-top sm-img-fluid rounded-3"
+                  alt="..."
+                />
+                <div class="card-body">
+                  <h5 class="card-title text-start">
+                    DHT11 – Temperature & Humidity Sensor
+                  </h5>
+                  <p class="card-text text-start fs-6 fw-light text-muted">
+                    Learn how the DHT11 sensor measures temperature and
+                    humidity, how it works, and how to read data using Arduino.
+                  </p>
+                </div>
+              </div>
+            </div>
+
+            <!-- card-3 -->
+            <div class="col text-center">
+              <div
+                class="card border-light px-md-5 py-md-4 px-4 py-3 text-center arduino-card"
+              >
+                <img
+                  src="images/sensor_page/dht22 (2).png"
+                  class="card-img-top sm-img-fluid rounded-3"
+                  alt="..."
+                />
+                <div class="card-body">
+                  <h5 class="card-title text-start">
+                    DHT22 – High Accuracy Temperature & Humidity Sensor
+                  </h5>
+                  <p class="card-text text-start fs-6 fw-light text-muted">
+                    Learn how the DHT22 sensor measures temperature and humidity
+                    with higher accuracy, and how to read precise data using
+                    Arduino.
+                  </p>
+                </div>
+              </div>
+            </div>
+
+            <!-- card-4 -->
+            <div class="col text-center">
+              <div
+                class="card border-light px-md-5 py-md-4 px-4 py-3 text-center arduino-card"
+              >
+                <img
+                  src="images/sensor_page/DS18B20.jpg"
+                  class="card-img-top sm-img-fluid rounded-3"
+                  alt="..."
+                />
+                <div class="card-body">
+                  <h5 class="card-title text-start">
+                    DS18B20 – Waterproof Temperature Sensor
+                  </h5>
+                  <p class="card-text text-start fs-6 fw-light text-muted">
+                    Learn how the DS18B20 sensor measures temperature
+                    accurately, how it works, and how to read temperature data
+                    using Arduino.
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <!-- motion & distance section -->
+        <section class="mb-5 motion-section-all">
+          <h2 class="d-flex flex-wrap section-title text-start mb-5">
+            Motion & Distance Sensors
+          </h2>
+
+          <!-- card container  -->
+          <div class="row row-cols-1 row-cols-lg-3 row-cols-md-2 g-4 px-sm-4">
+            <!-- card-1  -->
+            <div class="col text-center">
+              <div
+                class="card border-light px-md-5 py-md-4 px-4 py-3 text-center arduino-card"
+              >
+                <img
+                  src="images/sensor_page/HC-SR04 – Ultrasonic Distance Sensor.png"
+                  class="card-img-top sm-img-fluid rounded-3"
+                  alt="..."
+                />
+                <div class="card-body">
+                  <h5 class="card-title text-start">
+                    HC-SR04 – Ultrasonic Distance Sensor
+                  </h5>
+                  <p class="card-text text-start fs-6 fw-light text-muted">
+                    Learn how the HC-SR04 sensor measures distance using
+                    ultrasonic waves, how it works, and how to calculate
+                    distance with Arduino.
+                  </p>
+                </div>
+              </div>
+            </div>
+
+            <!-- card-2  -->
+            <div class="col text-center">
+              <div
+                class="card border-light px-md-5 py-md-4 px-4 py-3 text-center arduino-card"
+              >
+                <img
+                  src="images/sensor_page/PIR.png"
+                  class="card-img-top sm-img-fluid rounded-3"
+                  alt="..."
+                />
+                <div class="card-body">
+                  <h5 class="card-title text-start">
+                    PIR Sensor – Motion Detection
+                  </h5>
+                  <p class="card-text text-start fs-6 fw-light text-muted">
+                    Learn how the PIR sensor detects motion using infrared
+                    signals, how it works, and how to use it with Arduino
+                    projects.
+                  </p>
+                </div>
+              </div>
+            </div>
+
+            <!-- card-3  -->
+            <div class="col text-center">
+              <div
+                class="card border-light px-md-5 py-md-4 px-4 py-3 text-center arduino-card"
+              >
+                <img
+                  src="images/sensor_page/IR Obstacle Sensor.png"
+                  class="card-img-top sm-img-fluid rounded-3"
+                  alt="..."
+                />
+                <div class="card-body">
+                  <h5 class="card-title text-start">
+                    IR Obstacle Sensor – Object Detection
+                  </h5>
+                  <p class="card-text text-start fs-6 fw-light text-muted">
+                    Learn how the IR obstacle sensor detects nearby objects
+                    using infrared light, how it works, and how to use it with
+                    Arduino.
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <!-- soil & water section -->
+        <section class="mb-5 soil-section-all">
+          <h2 class="d-flex flex-wrap section-title text-start mb-5">
+            Soil & water sensors
+          </h2>
+
+          <!-- card container  -->
+          <div class="row row-cols-1 row-cols-lg-3 row-cols-md-2 g-4 px-sm-4">
+            <!-- card-1 -->
+            <div class="col text-center">
+              <div
+                class="card border-light px-md-5 py-md-4 px-4 py-3 text-center arduino-card"
+              >
+                <img
+                  src="images/sensor_page/Soil Moisture SensorSoil Moisture Sensor.webp"
+                  class="card-img-top sm-img-fluid rounded-3"
+                  alt="..."
+                />
+                <div class="card-body">
+                  <h5 class="card-title text-start">Soil Moisture Sensor</h5>
+                  <p class="card-text text-start fs-6 fw-light text-muted">
+                    Learn how the soil moisture sensor measures water content in
+                    soil, how it works, and how to monitor soil moisture with
+                    Arduino.
+                  </p>
+                </div>
+              </div>
+            </div>
+
+            <!-- card-2 -->
+            <div class="col text-center">
+              <div
+                class="card border-light px-md-5 py-md-4 px-4 py-3 text-center arduino-card"
+              >
+                <img
+                  src="images/sensor_page/NPK Sensor.png"
+                  class="card-img-top sm-img-fluid rounded-3"
+                  alt="..."
+                />
+                <div class="card-body">
+                  <h5 class="card-title text-start">
+                    NPK Sensor – Soil Nutrient Detection
+                  </h5>
+                  <p class="card-text text-start fs-6 fw-light text-muted">
+                    Learn how the NPK sensor measures nitrogen, phosphorus, and
+                    potassium levels in soil, how it works, and how to monitor
+                    soil nutrients with Arduino.
+                  </p>
+                </div>
+              </div>
+            </div>
+
+            <!-- card-3 -->
+            <div class="col text-center">
+              <div
+                class="card border-light px-md-5 py-md-4 px-4 py-3 text-center arduino-card"
+              >
+                <img
+                  src="images/sensor_page/Capacitive Soil Moisture Sensor.png"
+                  class="card-img-top sm-img-fluid rounded-3"
+                  alt="..."
+                />
+                <div class="card-body">
+                  <h5 class="card-title text-start">
+                    Capacitive Soil Moisture Sensor – Soil Water Detection
+                  </h5>
+                  <p class="card-text text-start fs-6 fw-light text-muted">
+                    Learn how the capacitive soil moisture sensor measures soil
+                    water levels accurately, how it works, and how to use it
+                    with Arduino projects.
+                  </p>
+                </div>
+              </div>
+            </div>
+
+            <!-- card-4 -->
+            <div class="col text-center">
+              <div
+                class="card border-light px-md-5 py-md-4 px-4 py-3 text-center arduino-card"
+              >
+                <img
+                  src="images/sensor_page/Water Sensor.webp"
+                  class="card-img-top sm-img-fluid rounded-3"
+                  alt="..."
+                />
+                <div class="card-body">
+                  <h5 class="card-title text-start">
+                    Water Sensor – Water Level Detection
+                  </h5>
+                  <p class="card-text text-start fs-6 fw-light text-muted">
+                    Learn how the water sensor detects the presence or level of
+                    water, how it works, and how to use it with Arduino
+                    projects.
+                  </p>
+                </div>
+              </div>
+            </div>
+
+            <!-- card-5 -->
+            <div class="col text-center">
+              <div
+                class="card border-light px-md-5 py-md-4 px-4 py-3 text-center arduino-card"
+              >
+                <img
+                  src="images/sensor_page/Rain Sensor.webp"
+                  class="card-img-top sm-img-fluid rounded-3"
+                  alt="..."
+                />
+                <div class="card-body">
+                  <h5 class="card-title text-start">Rain Sensor</h5>
+                  <p class="card-text text-start fs-6 fw-light text-muted">
+                    Detect rainfall easily with Arduino using this sensor. Ideal
+                    for weather stations, automatic wipers, or garden irrigation
+                    projects.
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <!-- other sensors section -->
+        <section class="mb-5 basic-pj-section-all">
+          <h2 class="d-flex flex-wrap section-title text-start mb-5">
+            Other Sensors
+          </h2>
+
+          <!-- card container  -->
+          <div class="row row-cols-1 row-cols-lg-3 row-cols-md-2 g-4 px-sm-4">
+            <!-- card-1  -->
+            <div class="col text-center">
+              <div
+                class="card border-light px-md-5 py-md-4 px-4 py-3 text-center arduino-card"
+              >
+                <img
+                  src="images/sensor_page/color sensor.png"
+                  class="card-img-top sm-img-fluid rounded-3"
+                  alt="..."
+                />
+                <div class="card-body">
+                  <h5 class="card-title text-start">Color Sensor</h5>
+                  <p class="card-text text-start fs-6 fw-light text-muted">
+                    Detect and identify colors with Arduino using the TCS3200
+                    sensor. Perfect for sorting objects, RGB projects, and
+                    interactive applications.
+                  </p>
+                </div>
+              </div>
+            </div>
+
+            <!-- card-2 -->
+            <div class="col text-center">
+              <div
+                class="card border-light px-md-5 py-md-4 px-4 py-3 text-center arduino-card"
+              >
+                <img
+                  src="images/sensor_page/Gas Sensor.png"
+                  class="card-img-top sm-img-fluid rounded-3"
+                  alt="..."
+                />
+                <div class="card-body">
+                  <h5 class="card-title text-start">Gas Sensor</h5>
+                  <p class="card-text text-start fs-6 fw-light text-muted">
+                    Detect harmful gases like LPG, CO, or smoke with Arduino
+                    using MQ gas sensors. Useful for safety, air quality
+                    monitoring, and home automation projects.
+                  </p>
+                </div>
+              </div>
+            </div>
+
+            <!-- card-3 -->
+            <div class="col text-center">
+              <div
+                class="card border-light px-md-5 py-md-4 px-4 py-3 text-center arduino-card"
+              >
+                <img
+                  src="images/sensor_page/Heart Rate Sensor (Pulse Sensor).png"
+                  class="card-img-top sm-img-fluid rounded-3"
+                  alt="..."
+                />
+                <div class="card-body">
+                  <h5 class="card-title text-start">
+                    Heart Rate Sensor (Pulse Sensor)
+                  </h5>
+                  <p class="card-text text-start fs-6 fw-light text-muted">
+                    Measure your heartbeat in real-time with Arduino using the
+                    Pulse Sensor. Ideal for health monitoring, fitness projects,
+                    and interactive electronics. Easy to read analog signals and
+                    visualize heart rate.
+                  </p>
+                </div>
+              </div>
+            </div>
+
+            <!-- card-4 -->
+            <div class="col text-center">
+              <div
+                class="card border-light px-md-5 py-md-4 px-4 py-3 text-center arduino-card"
+              >
+                <img
+                  src="images/sensor_page/Oximeter Sensor.webp"
+                  class="card-img-top sm-img-fluid rounded-3"
+                  alt="..."
+                />
+                <div class="card-body">
+                  <h5 class="card-title text-start">
+                    MAX30102 Oximeter & Heart Rate Sensor
+                  </h5>
+                  <p class="card-text text-start fs-6 fw-light text-muted">
+                    Measure blood oxygen levels (SpO₂) and heart rate with
+                    Arduino using the MAX30102 sensor. Perfect for health
+                    monitoring and wearable projects. Provides accurate readings
+                    with I2C communication for easy integration.
+                  </p>
+                </div>
+              </div>
+            </div>
+
+            <!-- card-5 -->
+            <div class="col text-center">
+              <div
+                class="card border-light px-md-5 py-md-4 px-4 py-3 text-center arduino-card"
+              >
+                <img
+                  src="images/sensor_page/Tilt sensor.png"
+                  class="card-img-top sm-img-fluid rounded-3"
+                  alt="..."
+                />
+                <div class="card-body">
+                  <h5 class="card-title text-start">Ball Tilt Switch Sensor</h5>
+                  <p class="card-text text-start fs-6 fw-light text-muted">
+                    Detect orientation or tilting with Arduino using this simple
+                    ball tilt sensor. Ideal for motion detection, alarm systems,
+                    and interactive projects. Gives a digital HIGH or LOW output
+                    when tilted.
+                  </p>
+                </div>
+              </div>
+            </div>
+
+            <!-- card-6 -->
+            <div class="col text-center">
+              <div
+                class="card border-light px-md-5 py-md-4 px-4 py-3 text-center arduino-card"
+              >
+                <img
+                  src="images/sensor_page/Force Sensor.png"
+                  class="card-img-top sm-img-fluid rounded-3"
+                  alt="..."
+                />
+                <div class="card-body">
+                  <h5 class="card-title text-start">
+                    Force Sensing Resistor (FSR)
+                  </h5>
+                  <p class="card-text text-start fs-6 fw-light text-muted">
+                    In this lesson, you’ll use your Arduino board and a device
+                    called a phototransistor to investigate electromagnetic
+                    waves – specifically visible light.
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+      </div>
+
+      <!-- temperature tab content -->
+      <div
+        class="tab-pane fade"
+        id="pills-temperature"
+        role="tabpanel"
+        aria-labelledby="pills-temperature-tab"
+        tabindex="0"
+      >
+        <!-- temperature content  -->
+        <section class="mb-5 temperature-section-all">
+          <h2 class="d-flex flex-wrap section-title text-start mb-5">
+            Temperature Sensors
+          </h2>
+
+          <!-- card container  -->
+          <div class="row row-cols-1 row-cols-lg-3 row-cols-md-2 g-4 px-sm-4">
+            <!-- card-1  -->
+            <div class="col text-center">
+              <div
+                class="card border-light px-md-5 py-md-4 px-4 py-3 text-center arduino-card"
+              >
+                <img
+                  src="images/sensor_page/LM35 (2).png"
+                  class="card-img-top sm-img-fluid rounded-3"
+                  alt="..."
+                />
+                <div class="card-body">
+                  <h5 class="card-title text-start">
+                    LM35 – Analog Temperature Sensor
+                  </h5>
+                  <p class="card-text text-start fs-6 fw-light text-muted">
+                    Learn how the LM35 sensor measures temperature using analog
+                    output, how it works, and how to read temperature values
+                    with Arduino.
+                  </p>
+                </div>
+              </div>
+            </div>
+
+            <!-- card-2 -->
+            <div class="col text-center">
+              <div
+                class="card border-light px-md-5 py-md-4 px-4 py-3 text-center arduino-card"
+              >
+                <img
+                  src="images/sensor_page/dht11 (2).png"
+                  class="card-img-top sm-img-fluid rounded-3"
+                  alt="..."
+                />
+                <div class="card-body">
+                  <h5 class="card-title text-start">
+                    DHT11 – Temperature & Humidity Sensor
+                  </h5>
+                  <p class="card-text text-start fs-6 fw-light text-muted">
+                    Learn how the DHT11 sensor measures temperature and
+                    humidity, how it works, and how to read data using Arduino.
+                  </p>
+                </div>
+              </div>
+            </div>
+
+            <!-- card-3 -->
+            <div class="col text-center">
+              <div
+                class="card border-light px-md-5 py-md-4 px-4 py-3 text-center arduino-card"
+              >
+                <img
+                  src="images/sensor_page/dht22 (2).png"
+                  class="card-img-top sm-img-fluid rounded-3"
+                  alt="..."
+                />
+                <div class="card-body">
+                  <h5 class="card-title text-start">
+                    DHT22 – High Accuracy Temperature & Humidity Sensor
+                  </h5>
+                  <p class="card-text text-start fs-6 fw-light text-muted">
+                    Learn how the DHT22 sensor measures temperature and humidity
+                    with higher accuracy, and how to read precise data using
+                    Arduino.
+                  </p>
+                </div>
+              </div>
+            </div>
+
+            <!-- card-4 -->
+            <div class="col text-center">
+              <div
+                class="card border-light px-md-5 py-md-4 px-4 py-3 text-center arduino-card"
+              >
+                <img
+                  src="images/sensor_page/DS18B20.jpg"
+                  class="card-img-top sm-img-fluid rounded-3"
+                  alt="..."
+                />
+                <div class="card-body">
+                  <h5 class="card-title text-start">
+                    DS18B20 – Waterproof Temperature Sensor
+                  </h5>
+                  <p class="card-text text-start fs-6 fw-light text-muted">
+                    Learn how the DS18B20 sensor measures temperature
+                    accurately, how it works, and how to read temperature data
+                    using Arduino.
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+      </div>
+
+      <!-- Motion & Distance tab content -->
+      <div
+        class="tab-pane fade"
+        id="pills-motion"
+        role="tabpanel"
+        aria-labelledby="pills-motion-tab"
+        tabindex="0"
+      >
+        <!-- motion & distance content -->
+        <section class="mb-5 motion-section-all">
+          <h2 class="d-flex flex-wrap section-title text-start mb-5">
+            Motion & Distance Sensors
+          </h2>
+
+          <!-- card container  -->
+          <div class="row row-cols-1 row-cols-lg-3 row-cols-md-2 g-4 px-sm-4">
+            <!-- card-1  -->
+            <div class="col text-center">
+              <div
+                class="card border-light px-md-5 py-md-4 px-4 py-3 text-center arduino-card"
+              >
+                <img
+                  src="images/sensor_page/HC-SR04 – Ultrasonic Distance Sensor.png"
+                  class="card-img-top sm-img-fluid rounded-3"
+                  alt="..."
+                />
+                <div class="card-body">
+                  <h5 class="card-title text-start">
+                    HC-SR04 – Ultrasonic Distance Sensor
+                  </h5>
+                  <p class="card-text text-start fs-6 fw-light text-muted">
+                    Learn how the HC-SR04 sensor measures distance using
+                    ultrasonic waves, how it works, and how to calculate
+                    distance with Arduino.
+                  </p>
+                </div>
+              </div>
+            </div>
+
+            <!-- card-2  -->
+            <div class="col text-center">
+              <div
+                class="card border-light px-md-5 py-md-4 px-4 py-3 text-center arduino-card"
+              >
+                <img
+                  src="images/sensor_page/PIR.png"
+                  class="card-img-top sm-img-fluid rounded-3"
+                  alt="..."
+                />
+                <div class="card-body">
+                  <h5 class="card-title text-start">
+                    PIR Sensor – Motion Detection
+                  </h5>
+                  <p class="card-text text-start fs-6 fw-light text-muted">
+                    Learn how the PIR sensor detects motion using infrared
+                    signals, how it works, and how to use it with Arduino
+                    projects.
+                  </p>
+                </div>
+              </div>
+            </div>
+
+            <!-- card-3  -->
+            <div class="col text-center">
+              <div
+                class="card border-light px-md-5 py-md-4 px-4 py-3 text-center arduino-card"
+              >
+                <img
+                  src="images/sensor_page/IR Obstacle Sensor.png"
+                  class="card-img-top sm-img-fluid rounded-3"
+                  alt="..."
+                />
+                <div class="card-body">
+                  <h5 class="card-title text-start">
+                    IR Obstacle Sensor – Object Detection
+                  </h5>
+                  <p class="card-text text-start fs-6 fw-light text-muted">
+                    Learn how the IR obstacle sensor detects nearby objects
+                    using infrared light, how it works, and how to use it with
+                    Arduino.
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+      </div>
+
+      <!-- Soil and Water tab content -->
+      <div
+        class="tab-pane fade"
+        id="pills-soil"
+        role="tabpanel"
+        aria-labelledby="pills-soil-tab"
+        tabindex="0"
+      >
+        <!-- soil & water content-->
+        <section class="mb-5 soil-section-all">
+          <h2 class="d-flex flex-wrap section-title text-start mb-5">
+            Soil & water sensors
+          </h2>
+
+          <!-- card container  -->
+          <div class="row row-cols-1 row-cols-lg-3 row-cols-md-2 g-4 px-sm-4">
+            <!-- card-1 -->
+            <div class="col text-center">
+              <div
+                class="card border-light px-md-5 py-md-4 px-4 py-3 text-center arduino-card"
+              >
+                <img
+                  src="images/sensor_page/Soil Moisture SensorSoil Moisture Sensor.webp"
+                  class="card-img-top sm-img-fluid rounded-3"
+                  alt="..."
+                />
+                <div class="card-body">
+                  <h5 class="card-title text-start">Soil Moisture Sensor</h5>
+                  <p class="card-text text-start fs-6 fw-light text-muted">
+                    Learn how the soil moisture sensor measures water content in
+                    soil, how it works, and how to monitor soil moisture with
+                    Arduino.
+                  </p>
+                </div>
+              </div>
+            </div>
+
+            <!-- card-2 -->
+            <div class="col text-center">
+              <div
+                class="card border-light px-md-5 py-md-4 px-4 py-3 text-center arduino-card"
+              >
+                <img
+                  src="images/sensor_page/NPK Sensor.png"
+                  class="card-img-top sm-img-fluid rounded-3"
+                  alt="..."
+                />
+                <div class="card-body">
+                  <h5 class="card-title text-start">
+                    NPK Sensor – Soil Nutrient Detection
+                  </h5>
+                  <p class="card-text text-start fs-6 fw-light text-muted">
+                    Learn how the NPK sensor measures nitrogen, phosphorus, and
+                    potassium levels in soil, how it works, and how to monitor
+                    soil nutrients with Arduino.
+                  </p>
+                </div>
+              </div>
+            </div>
+
+            <!-- card-3 -->
+            <div class="col text-center">
+              <div
+                class="card border-light px-md-5 py-md-4 px-4 py-3 text-center arduino-card"
+              >
+                <img
+                  src="images/sensor_page/Capacitive Soil Moisture Sensor.png"
+                  class="card-img-top sm-img-fluid rounded-3"
+                  alt="..."
+                />
+                <div class="card-body">
+                  <h5 class="card-title text-start">
+                    Capacitive Soil Moisture Sensor – Soil Water Detection
+                  </h5>
+                  <p class="card-text text-start fs-6 fw-light text-muted">
+                    Learn how the capacitive soil moisture sensor measures soil
+                    water levels accurately, how it works, and how to use it
+                    with Arduino projects.
+                  </p>
+                </div>
+              </div>
+            </div>
+
+            <!-- card-4 -->
+            <div class="col text-center">
+              <div
+                class="card border-light px-md-5 py-md-4 px-4 py-3 text-center arduino-card"
+              >
+                <img
+                  src="images/sensor_page/Water Sensor.webp"
+                  class="card-img-top sm-img-fluid rounded-3"
+                  alt="..."
+                />
+                <div class="card-body">
+                  <h5 class="card-title text-start">
+                    Water Sensor – Water Level Detection
+                  </h5>
+                  <p class="card-text text-start fs-6 fw-light text-muted">
+                    Learn how the water sensor detects the presence or level of
+                    water, how it works, and how to use it with Arduino
+                    projects.
+                  </p>
+                </div>
+              </div>
+            </div>
+
+            <!-- card-5 -->
+            <div class="col text-center">
+              <div
+                class="card border-light px-md-5 py-md-4 px-4 py-3 text-center arduino-card"
+              >
+                <img
+                  src="images/sensor_page/Rain Sensor.webp"
+                  class="card-img-top sm-img-fluid rounded-3"
+                  alt="..."
+                />
+                <div class="card-body">
+                  <h5 class="card-title text-start">Rain Sensor</h5>
+                  <p class="card-text text-start fs-6 fw-light text-muted">
+                    Detect rainfall easily with Arduino using this sensor. Ideal
+                    for weather stations, automatic wipers, or garden irrigation
+                    projects.
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+      </div>
+
+      <!-- other sensors tab content -->
+      <div
+        class="tab-pane fade"
+        id="pills-other"
+        role="tabpanel"
+        aria-labelledby="pills-other-tab"
+        tabindex="0"
+      >
+        <!-- other sensors content -->
+        <section class="mb-5 basic-pj-section-all">
+          <h2 class="d-flex flex-wrap section-title text-start mb-5">
+            Other Sensors
+          </h2>
+
+          <!-- card container  -->
+          <div class="row row-cols-1 row-cols-lg-3 row-cols-md-2 g-4 px-sm-4">
+            <!-- card-1  -->
+            <div class="col text-center">
+              <div
+                class="card border-light px-md-5 py-md-4 px-4 py-3 text-center arduino-card"
+              >
+                <img
+                  src="images/sensor_page/color sensor.png"
+                  class="card-img-top sm-img-fluid rounded-3"
+                  alt="..."
+                />
+                <div class="card-body">
+                  <h5 class="card-title text-start">Color Sensor</h5>
+                  <p class="card-text text-start fs-6 fw-light text-muted">
+                    Detect and identify colors with Arduino using the TCS3200
+                    sensor. Perfect for sorting objects, RGB projects, and
+                    interactive applications.
+                  </p>
+                </div>
+              </div>
+            </div>
+
+            <!-- card-2 -->
+            <div class="col text-center">
+              <div
+                class="card border-light px-md-5 py-md-4 px-4 py-3 text-center arduino-card"
+              >
+                <img
+                  src="images/sensor_page/Gas Sensor.png"
+                  class="card-img-top sm-img-fluid rounded-3"
+                  alt="..."
+                />
+                <div class="card-body">
+                  <h5 class="card-title text-start">Gas Sensor</h5>
+                  <p class="card-text text-start fs-6 fw-light text-muted">
+                    Detect harmful gases like LPG, CO, or smoke with Arduino
+                    using MQ gas sensors. Useful for safety, air quality
+                    monitoring, and home automation projects.
+                  </p>
+                </div>
+              </div>
+            </div>
+
+            <!-- card-3 -->
+            <div class="col text-center">
+              <div
+                class="card border-light px-md-5 py-md-4 px-4 py-3 text-center arduino-card"
+              >
+                <img
+                  src="images/sensor_page/Heart Rate Sensor (Pulse Sensor).png"
+                  class="card-img-top sm-img-fluid rounded-3"
+                  alt="..."
+                />
+                <div class="card-body">
+                  <h5 class="card-title text-start">
+                    Heart Rate Sensor (Pulse Sensor)
+                  </h5>
+                  <p class="card-text text-start fs-6 fw-light text-muted">
+                    Measure your heartbeat in real-time with Arduino using the
+                    Pulse Sensor. Ideal for health monitoring, fitness projects,
+                    and interactive electronics. Easy to read analog signals and
+                    visualize heart rate.
+                  </p>
+                </div>
+              </div>
+            </div>
+
+            <!-- card-4 -->
+            <div class="col text-center">
+              <div
+                class="card border-light px-md-5 py-md-4 px-4 py-3 text-center arduino-card"
+              >
+                <img
+                  src="images/sensor_page/Oximeter Sensor.webp"
+                  class="card-img-top sm-img-fluid rounded-3"
+                  alt="..."
+                />
+                <div class="card-body">
+                  <h5 class="card-title text-start">
+                    MAX30102 Oximeter & Heart Rate Sensor
+                  </h5>
+                  <p class="card-text text-start fs-6 fw-light text-muted">
+                    Measure blood oxygen levels (SpO₂) and heart rate with
+                    Arduino using the MAX30102 sensor. Perfect for health
+                    monitoring and wearable projects. Provides accurate readings
+                    with I2C communication for easy integration.
+                  </p>
+                </div>
+              </div>
+            </div>
+
+            <!-- card-5 -->
+            <div class="col text-center">
+              <div
+                class="card border-light px-md-5 py-md-4 px-4 py-3 text-center arduino-card"
+              >
+                <img
+                  src="images/sensor_page/Tilt sensor.png"
+                  class="card-img-top sm-img-fluid rounded-3"
+                  alt="..."
+                />
+                <div class="card-body">
+                  <h5 class="card-title text-start">Ball Tilt Switch Sensor</h5>
+                  <p class="card-text text-start fs-6 fw-light text-muted">
+                    Detect orientation or tilting with Arduino using this simple
+                    ball tilt sensor. Ideal for motion detection, alarm systems,
+                    and interactive projects. Gives a digital HIGH or LOW output
+                    when tilted.
+                  </p>
+                </div>
+              </div>
+            </div>
+
+            <!-- card-6 -->
+            <div class="col text-center">
+              <div
+                class="card border-light px-md-5 py-md-4 px-4 py-3 text-center arduino-card"
+              >
+                <img
+                  src="images/sensor_page/Force Sensor.png"
+                  class="card-img-top sm-img-fluid rounded-3"
+                  alt="..."
+                />
+                <div class="card-body">
+                  <h5 class="card-title text-start">
+                    Force Sensing Resistor (FSR)
+                  </h5>
+                  <p class="card-text text-start fs-6 fw-light text-muted">
+                    In this lesson, you’ll use your Arduino board and a device
+                    called a phototransistor to investigate electromagnetic
+                    waves – specifically visible light.
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+      </div>
+    </div>
+
+    <!-- footer section -->
+    <footer>
+      <div class="row py-3 px-5 footer-ending">
+        <div
+          class="col-md-5 text-center text-lg-start fs-6 fw-light text-muted fw-bold"
+        >
+          <span>&copy; 2026 Arduino Learning Hub MM</span>
+        </div>
+
+        <div class="col-md-7">
+          <div
+            class="d-flex flex-wrap justify-content-center justify-content-lg-end"
+          >
+            <div class="me-4 fs-6">
+              <a href="#" class="text-decoration-none text-body-secondary"
+                >About</a
+              >
+            </div>
+            <div class="me-4 fs-6">
+              <a href="#" class="text-decoration-none text-body-secondary"
+                >Courses</a
+              >
+            </div>
+            <div class="me-4 fs-6">
+              <a href="#" class="text-decoration-none text-body-secondary"
+                >Blog</a
+              >
+            </div>
+            <div class="me-4 fs-6">
+              <a href="#" class="text-decoration-none text-body-secondary"
+                >Contact</a
+              >
+            </div>
+            <div class="fs-6">
+              <a
+                href="#"
+                class="text-decoration-none text-body-secondary fw-bold"
+                >Admin</a
+              >
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- up to top bottom -->
+      <!-- d-none  d-md-flex -->
+      <a href="#" class="upt-btn fs-1 d-none d-md-flex py-md-1">
+        <i class="bi bi-arrow-up-circle-fill"></i
+      ></a>
+    </footer>
 
     <!-- link with fontawsome js cdn -->
     <script
