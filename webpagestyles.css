@@ -19,6 +19,50 @@ body {
   background-color: #fff;
 }
 
+/* nav section */
+.top_nav_bar {
+  background-color: #f8f9fa;
+  font-size: 1em;
+  background-image:
+    url(images/nav_bg_nobg.png), url(images/nav_bg_nobg.png),
+    url(images/nav_bg_nobg.png), url(images/nav_bg_nobg.png);
+  background-size: contain, contain, contain, contain;
+  background-repeat: no-repeat, no-repeat, no-repeat, no-repeat;
+  background-position:
+    bottom left,
+    bottom right,
+    right,
+    top left;
+
+  /* postion sticky */
+  /* position: sticky !important; */
+  /* top: 0 !important;
+  z-index: 99999 !important; */
+}
+
+/* nav link tabs' header  */
+@media (min-width: 990px) {
+  .navbar b {
+    display: none !important;
+    margin: 6px !important;
+  }
+}
+
+/* link tabs */
+
+/* Selected */
+.navbar .nav-tabs.active {
+  font-weight: 600;
+  border-bottom: 2px solid #00878f;
+  color: #00878f !important;
+}
+
+/* Hover */
+.nav-tabs:hover {
+  font-weight: bold;
+  color: #00878f !important;
+}
+
 /* arduino webpage sections */
 
 /* header section */
@@ -52,7 +96,7 @@ h2 {
   transition: all 0.7s ease;
 }
 
-.upt-btn:hover{
+.upt-btn:hover {
   display: inline-block;
   color: #00878f !important;
 }

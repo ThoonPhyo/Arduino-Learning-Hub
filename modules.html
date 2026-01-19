@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
@@ -12,8 +12,11 @@
       type="image/x-icon"
     />
 
-    <!-- link with style.css -->
+    <!-- Global CSS (used by all pages) -->
     <link rel="stylesheet" href="style.css" />
+
+    <!-- Arduino page specific CSS -->
+    <link rel="stylesheet" href="webpagestyles.css" />
 
     <!-- bootstrap css cdn -->
     <link
@@ -49,7 +52,7 @@
     >
       <div class="container-fluid">
         <a class="navbar-brand ps-3" href="index.html">
-          <!-- icon -->
+          <!-- icon  -->
           <img
             src="images/web_logo_ofc - Copy.png"
             alt="Logo"
@@ -74,7 +77,7 @@
             <b>Tutorials</b>
             <!-- nav tab-1 -->
             <li class="nav-item ms-3">
-              <a class="nav-link" href="arduino.html">
+              <a class="nav-link nav-tabs" href="arduino.html">
                 <img
                   src="images/nav_1 (1).png"
                   alt="Logo"
@@ -88,7 +91,7 @@
 
             <!-- nav tab-2 -->
             <li class="nav-item ms-3">
-              <a class="nav-link" href="sensors.html">
+              <a class="nav-link nav-tabs" href="sensors.html">
                 <img
                   src="images/nav_2 (1).png"
                   alt="Logo"
@@ -101,7 +104,7 @@
 
             <!-- nav tab-3 -->
             <li class="nav-item ms-3">
-              <a class="nav-link active" href="#">
+              <a class="nav-link active nav-tabs" href="#">
                 <img
                   src="images/nav_3 (2).png"
                   alt="Logo"
@@ -114,7 +117,7 @@
 
             <!-- nav tab-4 -->
             <li class="nav-item ms-3">
-              <a class="nav-link" href="electronics.html">
+              <a class="nav-link nav-tabs" href="electronics.html">
                 <img
                   src="images/nav_4 (1).png"
                   alt="Logo"
@@ -144,6 +147,1470 @@
         </div>
       </div>
     </nav>
+
+    <!-- Modules Page sections -->
+
+    <!-- header -->
+    <header>
+      <div class="page-header text-center py-5 px-2 px-xxl-5">
+        <h1 class="fw-bold">Modules for Arduino</h1>
+        <p class="text-muted col-md-8 mx-auto mb-md-5">
+          Explore a wide range of Arduino modules used in real-world electronics
+          projects. Learn how each module works, understand pin connections, and
+          build practical applications such as automation systems, safety
+          devices, health monitoring, and smart projects with step-by-step
+          guidance.
+        </p>
+
+        <!-- card-nav tabs bar-->
+        <ul
+          class="nav nav-pills mb-3 justify-content-center"
+          id="pills-tab"
+          role="tablist"
+        >
+          <!-- All tab -->
+          <li class="nav-item" role="presentation">
+            <button
+              class="nav-link active border rounded-5 my-1 mx-1 btn btn-light opacity-76"
+              id="pills-all-tab"
+              data-bs-toggle="pill"
+              data-bs-target="#pills-all"
+              type="button"
+              role="tab"
+              aria-controls="pills-all"
+              aria-selected="true"
+            >
+              All
+            </button>
+          </li>
+
+          <!-- Display Modules tab -->
+          <li class="nav-item" role="presentation">
+            <button
+              class="nav-link border rounded-5 my-1 mx-1 btn btn-light opacity-76"
+              id="pills-display-tab"
+              data-bs-toggle="pill"
+              data-bs-target="#pills-display"
+              type="button"
+              role="tab"
+              aria-controls="pills-display"
+              aria-selected="true"
+            >
+              Display
+            </button>
+          </li>
+
+          <!-- Communication Modules tab -->
+          <li class="nav-item" role="presentation">
+            <button
+              class="nav-link border rounded-5 my-1 mx-1 btn btn-light opacity-76"
+              id="pills-communication-tab"
+              data-bs-toggle="pill"
+              data-bs-target="#pills-communication"
+              type="button"
+              role="tab"
+              aria-controls="pills-communication"
+              aria-selected="true"
+            >
+              Communication
+            </button>
+          </li>
+
+          <!-- Motor & Servo Modules tab -->
+          <li class="nav-item" role="presentation">
+            <button
+              class="nav-link border rounded-5 my-1 mx-1 btn btn-light opacity-76"
+              id="pills-motor-tab"
+              data-bs-toggle="pill"
+              data-bs-target="#pills-motor"
+              type="button"
+              role="tab"
+              aria-controls="pills-motor"
+              aria-selected="true"
+            >
+              Motor & Servo
+            </button>
+          </li>
+
+          <!-- Other Modules tab -->
+          <li class="nav-item" role="presentation">
+            <button
+              class="nav-link border rounded-5 my-1 mx-1 btn btn-light opacity-76"
+              id="pills-other-tab"
+              data-bs-toggle="pill"
+              data-bs-target="#pills-other"
+              type="button"
+              role="tab"
+              aria-controls="pills-other"
+              aria-selected="true"
+            >
+              Others
+            </button>
+          </li>
+        </ul>
+      </div>
+    </header>
+
+    <!-- nav tabs' contents -->
+    <div class="tab-content px-4 px-md-5 py-5" id="pills-tabContent">
+      <!-- all tab content -->
+      <div
+        class="tab-pane fade show active"
+        id="pills-all"
+        role="tabpanel"
+        aria-labelledby="pills-all-tab"
+        tabindex="0"
+      >
+        <!-- Display Modules section  -->
+        <section class="mb-5 display-section-all">
+          <h2 class="d-flex flex-wrap section-title text-start mb-5">
+            Display Modules
+          </h2>
+
+          <!-- card container  -->
+          <div class="row row-cols-1 row-cols-lg-3 row-cols-md-2 g-4 px-sm-4">
+            <!-- card-1  -->
+            <div class="col text-center">
+              <div
+                class="card border-light px-md-5 py-md-4 px-4 py-3 text-center arduino-card"
+              >
+                <img
+                  src="images/module_page/LCD.png"
+                  class="card-img-top sm-img-fluid rounded-3"
+                  alt="..."
+                />
+                <div class="card-body text-start">
+                  <h5 class="card-title text-start">16×2 LCD Display</h5>
+                  <p class="card-text text-start fs-6 fw-light text-muted">
+                    Display text and numbers with Arduino using the 16×2 LCD.
+                    Commonly used for menus, sensor values, and system status.
+                    Easy to control with parallel or I2C interface for compact
+                    wiring.
+                  </p>
+                  <a href="" class="btn btn-primary text-uppercase"
+                    >Learn More</a
+                  >
+                </div>
+              </div>
+            </div>
+
+            <!-- card-2 -->
+            <div class="col text-center">
+              <div
+                class="card border-light px-md-5 py-md-4 px-4 py-3 text-center arduino-card"
+              >
+                <img
+                  src="images/module_page/oled.png"
+                  class="card-img-top sm-img-fluid rounded-3"
+                  alt="..."
+                />
+                <div class="card-body text-start">
+                  <h5 class="card-title text-start">
+                    0.96" OLED Display Module
+                  </h5>
+                  <p class="card-text text-start fs-6 fw-light text-muted">
+                    Show text, icons, and graphics with Arduino using the
+                    0.96-inch OLED display. Compact, bright, and low power, it
+                    is ideal for sensor data, menus, and portable electronics
+                    projects. Supports I2C communication.
+                  </p>
+                  <a href="" class="btn btn-primary text-uppercase"
+                    >Learn More</a
+                  >
+                </div>
+              </div>
+            </div>
+
+            <!-- card-3 -->
+            <div class="col text-center">
+              <div
+                class="card border-light px-md-5 py-md-4 px-4 py-3 text-center arduino-card"
+              >
+                <img
+                  src="images/module_page/7-segment.png"
+                  class="card-img-top sm-img-fluid rounded-3"
+                  alt="..."
+                />
+                <div class="card-body text-start">
+                  <h5 class="card-title text-start">
+                    7-Segment Display Module
+                  </h5>
+                  <p class="card-text text-start fs-6 fw-light text-muted">
+                    Display numbers and basic characters with Arduino using a
+                    7-segment display. Commonly used for counters, timers,
+                    clocks, and digital indicators. Simple to control
+                    individually or with driver ICs.
+                  </p>
+                  <a href="" class="btn btn-primary text-uppercase"
+                    >Learn More</a
+                  >
+                </div>
+              </div>
+            </div>
+
+            <!-- card-4 -->
+            <div class="col text-center">
+              <div
+                class="card border-light px-md-5 py-md-4 px-4 py-3 text-center arduino-card"
+              >
+                <img
+                  src="images/module_page/max7219.png"
+                  class="card-img-top sm-img-fluid rounded-3"
+                  alt="..."
+                />
+                <div class="card-body text-start">
+                  <h5 class="card-title text-start">
+                    MAX7219 LED Display Module
+                  </h5>
+                  <p class="card-text text-start fs-6 fw-light text-muted">
+                    Control dot matrix displays with Arduino using the MAX7219
+                    driver. Ideal for clocks, scoreboards, and scrolling text
+                    projects. Uses SPI communication and reduces wiring
+                    complexity.
+                  </p>
+                  <a href="" class="btn btn-primary text-uppercase"
+                    >Learn More</a
+                  >
+                </div>
+              </div>
+            </div>
+
+            <!-- card-5 -->
+            <div class="col text-center">
+              <div
+                class="card border-light px-md-5 py-md-4 px-4 py-3 text-center arduino-card"
+              >
+                <img
+                  src="images/module_page/tm1637.png"
+                  class="card-img-top sm-img-fluid rounded-3"
+                  alt="..."
+                />
+                <div class="card-body text-start">
+                  <h5 class="card-title text-start">
+                    TM1637 4-Digit Display Module
+                  </h5>
+                  <p class="card-text text-start fs-6 fw-light text-muted">
+                    Display numbers and basic symbols with Arduino using the
+                    TM1637 module. Commonly used for clocks, timers, counters,
+                    and voltage displays. Requires only two data pins for simple
+                    and fast control.
+                  </p>
+                  <a href="" class="btn btn-primary text-uppercase"
+                    >Learn More</a
+                  >
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <!-- Communication Modules section -->
+        <section class="mb-5 motion-section-all">
+          <h2 class="d-flex flex-wrap section-title text-start mb-5">
+            Communication Modules
+          </h2>
+
+          <!-- card container  -->
+          <div class="row row-cols-1 row-cols-lg-3 row-cols-md-2 g-4 px-sm-4">
+            <!-- card-1  -->
+            <div class="col text-center">
+              <div
+                class="card border-light px-md-5 py-md-4 px-4 py-3 text-center arduino-card"
+              >
+                <img
+                  src="images/module_page/HC05.png"
+                  class="card-img-top sm-img-fluid rounded-3"
+                  alt="..."
+                />
+                <div class="card-body text-start">
+                  <h5 class="card-title text-start">HC-05 Bluetooth Module</h5>
+                  <p class="card-text text-start fs-6 fw-light text-muted">
+                    Easily add wireless communication to your Arduino projects
+                    with the HC-05 Bluetooth module. Perfect for remote control,
+                    data transfer, and IoT projects. Supports serial
+                    communication with simple pairing.
+                  </p>
+                  <a href="" class="btn btn-primary text-uppercase"
+                    >Learn More</a
+                  >
+                </div>
+              </div>
+            </div>
+
+            <!-- card-2  -->
+            <div class="col text-center">
+              <div
+                class="card border-light px-md-5 py-md-4 px-4 py-3 text-center arduino-card"
+              >
+                <img
+                  src="images/module_page/sim900.png"
+                  class="card-img-top sm-img-fluid rounded-3"
+                  alt="..."
+                />
+                <div class="card-body text-start">
+                  <h5 class="card-title text-start">SIM900 GSM Module</h5>
+                  <p class="card-text text-start fs-6 fw-light text-muted">
+                    Add mobile communication to projects with the SIM900 GSM
+                    module. Send SMS, make calls, and connect to the internet.
+                    Controlled via AT commands, it’s perfect for IoT, security,
+                    and remote monitoring projects.
+                  </p>
+                  <a href="" class="btn btn-primary text-uppercase"
+                    >Learn More</a
+                  >
+                </div>
+              </div>
+            </div>
+
+            <!-- card-3  -->
+            <div class="col text-center">
+              <div
+                class="card border-light px-md-5 py-md-4 px-4 py-3 text-center arduino-card"
+              >
+                <img
+                  src="images/module_page/sim800l.png"
+                  class="card-img-top sm-img-fluid rounded-3"
+                  alt="..."
+                />
+                <div class="card-body text-start">
+                  <h5 class="card-title text-start">SIM800L GSM Module</h5>
+                  <p class="card-text text-start fs-6 fw-light text-muted">
+                    Send SMS, make calls, and connect to the internet with
+                    Arduino using the SIM800L GSM module. Ideal for IoT, remote
+                    monitoring, and communication projects. Works with AT
+                    commands for easy control.
+                  </p>
+                  <a href="" class="btn btn-primary text-uppercase"
+                    >Learn More</a
+                  >
+                </div>
+              </div>
+            </div>
+
+            <!-- card-4  -->
+            <div class="col text-center">
+              <div
+                class="card border-light px-md-5 py-md-4 px-4 py-3 text-center arduino-card"
+              >
+                <img
+                  src="images/module_page/gps.png"
+                  class="card-img-top sm-img-fluid rounded-3"
+                  alt="..."
+                />
+                <div class="card-body text-start">
+                  <h5 class="card-title text-start">NEO-6M GPS Module</h5>
+                  <p class="card-text text-start fs-6 fw-light text-muted">
+                    Track location, speed, and time with Arduino using the
+                    NEO-6M GPS module. Perfect for navigation, tracking, and
+                    outdoor projects. Provides easy-to-read NMEA data via serial
+                    communication.
+                  </p>
+                  <a href="" class="btn btn-primary text-uppercase"
+                    >Learn More</a
+                  >
+                </div>
+              </div>
+            </div>
+
+            <!-- card-5  -->
+            <div class="col text-center">
+              <div
+                class="card border-light px-md-5 py-md-4 px-4 py-3 text-center arduino-card"
+              >
+                <img
+                  src="images/module_page/nRF24L01.png"
+                  class="card-img-top sm-img-fluid rounded-3"
+                  alt="..."
+                />
+                <div class="card-body text-start">
+                  <h5 class="card-title text-start">
+                    nRF24L01 Wireless Module
+                  </h5>
+                  <p class="card-text text-start fs-6 fw-light text-muted">
+                    Enable wireless communication between Arduinos using the
+                    nRF24L01 module. Ideal for remote control, sensor networks,
+                    and IoT projects. Uses SPI communication for fast and
+                    reliable data transfer.
+                  </p>
+                  <a href="" class="btn btn-primary text-uppercase"
+                    >Learn More</a
+                  >
+                </div>
+              </div>
+            </div>
+
+            <!-- card-6 -->
+            <div class="col text-center">
+              <div
+                class="card border-light px-md-5 py-md-4 px-4 py-3 text-center arduino-card"
+              >
+                <img
+                  src="images/module_page/433 MHz.png"
+                  class="card-img-top sm-img-fluid rounded-3"
+                  alt="..."
+                />
+                <div class="card-body text-start">
+                  <h5 class="card-title text-start">433 MHz RF RX/TX Module</h5>
+                  <p class="card-text text-start fs-6 fw-light text-muted">
+                    Send and receive wireless data with Arduino using the
+                    433 MHz RF modules. Commonly used for remote controls and
+                    basic communication projects. Simple, low-cost solution for
+                    short-range wireless links.
+                  </p>
+                  <a href="" class="btn btn-primary text-uppercase"
+                    >Learn More</a
+                  >
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <!-- Motor & Servo Modules section -->
+        <section class="mb-5 soil-section-all">
+          <h2 class="d-flex flex-wrap section-title text-start mb-5">
+            Motor & Servo Modules
+          </h2>
+
+          <!-- card container  -->
+          <div class="row row-cols-1 row-cols-lg-3 row-cols-md-2 g-4 px-sm-4">
+            <!-- card-1 -->
+            <div class="col text-center">
+              <div
+                class="card border-light px-md-5 py-md-4 px-4 py-3 text-center arduino-card"
+              >
+                <img
+                  src="images/module_page/l293d.png"
+                  class="card-img-top sm-img-fluid rounded-3"
+                  alt="..."
+                />
+                <div class="card-body text-start">
+                  <h5 class="card-title text-start">L293D Motor Driver IC</h5>
+                  <p class="card-text text-start fs-6 fw-light text-muted">
+                    Control DC and stepper motors with Arduino using the L293D
+                    IC. Ideal for robotics, motorized projects, and automation.
+                    Allows bidirectional motor control with simple digital
+                    signals.
+                  </p>
+                  <a href="" class="btn btn-primary text-uppercase"
+                    >Learn More</a
+                  >
+                </div>
+              </div>
+            </div>
+
+            <!-- card-2 -->
+            <div class="col text-center">
+              <div
+                class="card border-light px-md-5 py-md-4 px-4 py-3 text-center arduino-card"
+              >
+                <img
+                  src="images/module_page/l293d-shield.png"
+                  class="card-img-top sm-img-fluid rounded-3"
+                  alt="..."
+                />
+                <div class="card-body text-start">
+                  <h5 class="card-title text-start">
+                    L293D Motor Driver Shield
+                  </h5>
+                  <p class="card-text text-start fs-6 fw-light text-muted">
+                    Easily control DC and stepper motors with Arduino using the
+                    L293D motor driver shield. Perfect for robotics and
+                    automation projects. Plugs directly onto Arduino for simple
+                    and convenient motor control.
+                  </p>
+                  <a href="" class="btn btn-primary text-uppercase"
+                    >Learn More</a
+                  >
+                </div>
+              </div>
+            </div>
+
+            <!-- card-3 -->
+            <div class="col text-center">
+              <div
+                class="card border-light px-md-5 py-md-4 px-4 py-3 text-center arduino-card"
+              >
+                <img
+                  src="images/module_page/28BYJ-48.png"
+                  class="card-img-top sm-img-fluid rounded-3"
+                  alt="..."
+                />
+                <div class="card-body text-start">
+                  <h5 class="card-title text-start">28BYJ-48 Stepper Motor</h5>
+                  <p class="card-text text-start fs-6 fw-light text-muted">
+                    Control precise rotation and position with Arduino using the
+                    28BYJ-48 stepper motor. Ideal for small robotics, automated
+                    systems, and DIY projects. Works well with the ULN2003
+                    driver board for easy interfacing.
+                  </p>
+                  <a href="" class="btn btn-primary text-uppercase"
+                    >Learn More</a
+                  >
+                </div>
+              </div>
+            </div>
+
+            <!-- card-4 -->
+            <div class="col text-center">
+              <div
+                class="card border-light px-md-5 py-md-4 px-4 py-3 text-center arduino-card"
+              >
+                <img
+                  src="images/module_page/serv0.webp"
+                  class="card-img-top sm-img-fluid rounded-3"
+                  alt="..."
+                />
+                <div class="card-body text-start">
+                  <h5 class="card-title text-start">Servo Motor</h5>
+                  <p class="card-text text-start fs-6 fw-light text-muted">
+                    Control precise angles and positions with Arduino using a
+                    servo motor. Perfect for robotics, automated arms, and
+                    moving parts in projects. Easy to control with PWM signals
+                    for accurate rotation.
+                  </p>
+                  <a href="" class="btn btn-primary text-uppercase"
+                    >Learn More</a
+                  >
+                </div>
+              </div>
+            </div>
+
+            <!-- card-5 -->
+            <div class="col text-center">
+              <div
+                class="card border-light px-md-5 py-md-4 px-4 py-3 text-center arduino-card"
+              >
+                <img
+                  src="images/module_page/l298n.png"
+                  class="card-img-top sm-img-fluid rounded-3"
+                  alt="..."
+                />
+                <div class="card-body text-start">
+                  <h5 class="card-title text-start">
+                    L298N Motor Driver Module
+                  </h5>
+                  <p class="card-text text-start fs-6 fw-light text-muted">
+                    Control DC and stepper motors with Arduino using the L298N
+                    module. Ideal for robotics, motorized projects, and
+                    automation. Provides bidirectional control and adjustable
+                    speed for multiple motors.
+                  </p>
+                  <a href="" class="btn btn-primary text-uppercase"
+                    >Learn More</a
+                  >
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <!-- Other Modules section -->
+        <section class="mb-5 basic-pj-section-all">
+          <h2 class="d-flex flex-wrap section-title text-start mb-5">
+            Other Modules
+          </h2>
+
+          <!-- card container  -->
+          <div class="row row-cols-1 row-cols-lg-3 row-cols-md-2 g-4 px-sm-4">
+            <!-- card-1 -->
+            <div class="col text-center">
+              <div
+                class="card border-light px-md-5 py-md-4 px-4 py-3 text-center arduino-card"
+              >
+                <img
+                  src="images/module_page/1-Channel Relay Module.png"
+                  class="card-img-top sm-img-fluid rounded-3"
+                  alt="..."
+                />
+                <div class="card-body text-start">
+                  <h5 class="card-title text-start">1-Channel Relay Module</h5>
+                  <p class="card-text text-start fs-6 fw-light text-muted">
+                    Control high-voltage devices with Arduino safely using a
+                    1-channel relay module. Perfect for home automation,
+                    switching lights, fans, or appliances. Uses a digital signal
+                    to turn devices ON or OFF.
+                  </p>
+                  <a href="" class="btn btn-primary text-uppercase"
+                    >Learn More</a
+                  >
+                </div>
+              </div>
+            </div>
+
+            <!-- card-2 -->
+            <div class="col text-center">
+              <div
+                class="card border-light px-md-5 py-md-4 px-4 py-3 text-center arduino-card"
+              >
+                <img
+                  src="images/module_page/2-Channel Relay Module.png"
+                  class="card-img-top sm-img-fluid rounded-3"
+                  alt="..."
+                />
+                <div class="card-body text-start">
+                  <h5 class="card-title text-start">2-Channel Relay Module</h5>
+                  <p class="card-text text-start fs-6 fw-light text-muted">
+                    Control two high-voltage devices independently with Arduino
+                    using the 2-channel relay module. Ideal for lights, fans,
+                    and home automations. Each channel works with a simple
+                    digital signal.
+                  </p>
+                  <a href="" class="btn btn-primary text-uppercase"
+                    >Learn More</a
+                  >
+                </div>
+              </div>
+            </div>
+
+            <!-- card-3 -->
+            <div class="col text-center">
+              <div
+                class="card border-light px-md-5 py-md-4 px-4 py-3 text-center arduino-card"
+              >
+                <img
+                  src="images/module_page/Keypad Module.png"
+                  class="card-img-top sm-img-fluid rounded-3"
+                  alt="..."
+                />
+                <div class="card-body text-start">
+                  <h5 class="card-title text-start">Keypad Module</h5>
+                  <p class="card-text text-start fs-6 fw-light text-muted">
+                    Add a numeric or alphanumeric input to your Arduino projects
+                    using a keypad. Perfect for security systems, password
+                    entry, and menu navigation. Supports easy wiring with rows
+                    and columns for quick integration.
+                  </p>
+                  <a href="" class="btn btn-primary text-uppercase"
+                    >Learn More</a
+                  >
+                </div>
+              </div>
+            </div>
+
+            <!-- card-4 -->
+            <div class="col text-center">
+              <div
+                class="card border-light px-md-5 py-md-4 px-4 py-3 text-center arduino-card"
+              >
+                <img
+                  src="images/module_page/Rotary Encoder Module.png"
+                  class="card-img-top sm-img-fluid rounded-3"
+                  alt="..."
+                />
+                <div class="card-body text-start">
+                  <h5 class="card-title text-start">Rotary Encoder Module</h5>
+                  <p class="card-text text-start fs-6 fw-light text-muted">
+                    Detect rotation direction and position with Arduino using a
+                    rotary encoder. Perfect for volume controls, menu
+                    navigation, and robotics. Provides precise digital signals
+                    for turning and clicking actions.
+                  </p>
+                  <a href="" class="btn btn-primary text-uppercase"
+                    >Learn More</a
+                  >
+                </div>
+              </div>
+            </div>
+
+            <!-- card-5 -->
+            <div class="col text-center">
+              <div
+                class="card border-light px-md-5 py-md-4 px-4 py-3 text-center arduino-card"
+              >
+                <img
+                  src="images/module_page/rtc.png"
+                  class="card-img-top sm-img-fluid rounded-3"
+                  alt="..."
+                />
+                <div class="card-body text-start">
+                  <h5 class="card-title text-start">
+                    RTC (Real-Time Clock) Module
+                  </h5>
+                  <p class="card-text text-start fs-6 fw-light text-muted">
+                    Keep accurate time in your Arduino projects using an RTC
+                    module. Perfect for clocks, data logging, and scheduling
+                    tasks. Provides hours, minutes, seconds, date even when the
+                    Arduino is powered off.
+                  </p>
+                  <a href="" class="btn btn-primary text-uppercase"
+                    >Learn More</a
+                  >
+                </div>
+              </div>
+            </div>
+
+            <!-- card-6 -->
+            <div class="col text-center">
+              <div
+                class="card border-light px-md-5 py-md-4 px-4 py-3 text-center arduino-card"
+              >
+                <img
+                  src="images/module_page/sd.png"
+                  class="card-img-top sm-img-fluid rounded-3"
+                  alt="..."
+                />
+                <div class="card-body text-start">
+                  <h5 class="card-title text-start">SD Card Module</h5>
+                  <p class="card-text text-start fs-6 fw-light text-muted">
+                    Store and read data from Arduino projects using an SD card
+                    module. Perfect for logging sensor data, saving text or
+                    images, and building portable storage projects. Easy to
+                    interface via SPI communication.
+                  </p>
+                  <a href="" class="btn btn-primary text-uppercase"
+                    >Learn More</a
+                  >
+                </div>
+              </div>
+            </div>
+
+            <!-- card-7 -->
+            <div class="col text-center">
+              <div
+                class="card border-light px-md-5 py-md-4 px-4 py-3 text-center arduino-card"
+              >
+                <img
+                  src="images/module_page/Joystick Module.png"
+                  class="card-img-top sm-img-fluid rounded-3"
+                  alt="..."
+                />
+                <div class="card-body text-start">
+                  <h5 class="card-title text-start">Joystick Module</h5>
+                  <p class="card-text text-start fs-6 fw-light text-muted">
+                    Add directional control to your Arduino projects with a
+                    joystick module. Perfect for robot navigation, gaming
+                    controllers, and interactive interfaces. Provides X and Y
+                    axis analog readings and a digital button press.
+                  </p>
+                  <a href="" class="btn btn-primary text-uppercase"
+                    >Learn More</a
+                  >
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+      </div>
+
+      <!-- Display Modules tab content -->
+      <div
+        class="tab-pane fade"
+        id="pills-display"
+        role="tabpanel"
+        aria-labelledby="pills-display-tab"
+        tabindex="0"
+      >
+        <!-- Display Modules content -->
+        <section class="mb-5 display-section-all">
+          <h2 class="d-flex flex-wrap section-title text-start mb-5">
+            Display Modules
+          </h2>
+
+          <!-- card container  -->
+          <div class="row row-cols-1 row-cols-lg-3 row-cols-md-2 g-4 px-sm-4">
+            <!-- card-1  -->
+            <div class="col text-center">
+              <div
+                class="card border-light px-md-5 py-md-4 px-4 py-3 text-center arduino-card"
+              >
+                <img
+                  src="images/module_page/LCD.png"
+                  class="card-img-top sm-img-fluid rounded-3"
+                  alt="..."
+                />
+                <div class="card-body text-start">
+                  <h5 class="card-title text-start">16×2 LCD Display</h5>
+                  <p class="card-text text-start fs-6 fw-light text-muted">
+                    Display text and numbers with Arduino using the 16×2 LCD.
+                    Commonly used for menus, sensor values, and system status.
+                    Easy to control with parallel or I2C interface for compact
+                    wiring.
+                  </p>
+                  <a href="" class="btn btn-primary text-uppercase"
+                    >Learn More</a
+                  >
+                </div>
+              </div>
+            </div>
+
+            <!-- card-2 -->
+            <div class="col text-center">
+              <div
+                class="card border-light px-md-5 py-md-4 px-4 py-3 text-center arduino-card"
+              >
+                <img
+                  src="images/module_page/oled.png"
+                  class="card-img-top sm-img-fluid rounded-3"
+                  alt="..."
+                />
+                <div class="card-body text-start">
+                  <h5 class="card-title text-start">
+                    0.96" OLED Display Module
+                  </h5>
+                  <p class="card-text text-start fs-6 fw-light text-muted">
+                    Show text, icons, and graphics with Arduino using the
+                    0.96-inch OLED display. Compact, bright, and low power, it
+                    is ideal for sensor data, menus, and portable electronics
+                    projects. Supports I2C communication.
+                  </p>
+                  <a href="" class="btn btn-primary text-uppercase"
+                    >Learn More</a
+                  >
+                </div>
+              </div>
+            </div>
+
+            <!-- card-3 -->
+            <div class="col text-center">
+              <div
+                class="card border-light px-md-5 py-md-4 px-4 py-3 text-center arduino-card"
+              >
+                <img
+                  src="images/module_page/7-segment.png"
+                  class="card-img-top sm-img-fluid rounded-3"
+                  alt="..."
+                />
+                <div class="card-body text-start">
+                  <h5 class="card-title text-start">
+                    7-Segment Display Module
+                  </h5>
+                  <p class="card-text text-start fs-6 fw-light text-muted">
+                    Display numbers and basic characters with Arduino using a
+                    7-segment display. Commonly used for counters, timers,
+                    clocks, and digital indicators. Simple to control
+                    individually or with driver ICs.
+                  </p>
+                  <a href="" class="btn btn-primary text-uppercase"
+                    >Learn More</a
+                  >
+                </div>
+              </div>
+            </div>
+
+            <!-- card-4 -->
+            <div class="col text-center">
+              <div
+                class="card border-light px-md-5 py-md-4 px-4 py-3 text-center arduino-card"
+              >
+                <img
+                  src="images/module_page/max7219.png"
+                  class="card-img-top sm-img-fluid rounded-3"
+                  alt="..."
+                />
+                <div class="card-body text-start">
+                  <h5 class="card-title text-start">
+                    MAX7219 LED Display Module
+                  </h5>
+                  <p class="card-text text-start fs-6 fw-light text-muted">
+                    Control dot matrix displays with Arduino using the MAX7219
+                    driver. Ideal for clocks, scoreboards, and scrolling text
+                    projects. Uses SPI communication and reduces wiring
+                    complexity.
+                  </p>
+                  <a href="" class="btn btn-primary text-uppercase"
+                    >Learn More</a
+                  >
+                </div>
+              </div>
+            </div>
+
+            <!-- card-5 -->
+            <div class="col text-center">
+              <div
+                class="card border-light px-md-5 py-md-4 px-4 py-3 text-center arduino-card"
+              >
+                <img
+                  src="images/module_page/tm1637.png"
+                  class="card-img-top sm-img-fluid rounded-3"
+                  alt="..."
+                />
+                <div class="card-body text-start">
+                  <h5 class="card-title text-start">
+                    TM1637 4-Digit Display Module
+                  </h5>
+                  <p class="card-text text-start fs-6 fw-light text-muted">
+                    Display numbers and basic symbols with Arduino using the
+                    TM1637 module. Commonly used for clocks, timers, counters,
+                    and voltage displays. Requires only two data pins for simple
+                    and fast control.
+                  </p>
+                  <a href="" class="btn btn-primary text-uppercase"
+                    >Learn More</a
+                  >
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+      </div>
+
+      <!-- Communication Modules tab content -->
+      <div
+        class="tab-pane fade"
+        id="pills-communication"
+        role="tabpanel"
+        aria-labelledby="pills-communication-tab"
+        tabindex="0"
+      >
+        <!-- Communication Modules content -->
+        <section class="mb-5 motion-section-all">
+          <h2 class="d-flex flex-wrap section-title text-start mb-5">
+            Communication Modules
+          </h2>
+
+          <!-- card container  -->
+          <div class="row row-cols-1 row-cols-lg-3 row-cols-md-2 g-4 px-sm-4">
+            <!-- card-1  -->
+            <div class="col text-center">
+              <div
+                class="card border-light px-md-5 py-md-4 px-4 py-3 text-center arduino-card"
+              >
+                <img
+                  src="images/module_page/HC05.png"
+                  class="card-img-top sm-img-fluid rounded-3"
+                  alt="..."
+                />
+                <div class="card-body text-start">
+                  <h5 class="card-title text-start">HC-05 Bluetooth Module</h5>
+                  <p class="card-text text-start fs-6 fw-light text-muted">
+                    Easily add wireless communication to your Arduino projects
+                    with the HC-05 Bluetooth module. Perfect for remote control,
+                    data transfer, and IoT projects. Supports serial
+                    communication with simple pairing.
+                  </p>
+                  <a href="" class="btn btn-primary text-uppercase"
+                    >Learn More</a
+                  >
+                </div>
+              </div>
+            </div>
+
+            <!-- card-2  -->
+            <div class="col text-center">
+              <div
+                class="card border-light px-md-5 py-md-4 px-4 py-3 text-center arduino-card"
+              >
+                <img
+                  src="images/module_page/sim900.png"
+                  class="card-img-top sm-img-fluid rounded-3"
+                  alt="..."
+                />
+                <div class="card-body text-start">
+                  <h5 class="card-title text-start">SIM900 GSM Module</h5>
+                  <p class="card-text text-start fs-6 fw-light text-muted">
+                    Add mobile communication to projects with the SIM900 GSM
+                    module. Send SMS, make calls, and connect to the internet.
+                    Controlled via AT commands, it’s perfect for IoT, security,
+                    and remote monitoring projects.
+                  </p>
+                  <a href="" class="btn btn-primary text-uppercase"
+                    >Learn More</a
+                  >
+                </div>
+              </div>
+            </div>
+
+            <!-- card-3  -->
+            <div class="col text-center">
+              <div
+                class="card border-light px-md-5 py-md-4 px-4 py-3 text-center arduino-card"
+              >
+                <img
+                  src="images/module_page/sim800l.png"
+                  class="card-img-top sm-img-fluid rounded-3"
+                  alt="..."
+                />
+                <div class="card-body text-start">
+                  <h5 class="card-title text-start">SIM800L GSM Module</h5>
+                  <p class="card-text text-start fs-6 fw-light text-muted">
+                    Send SMS, make calls, and connect to the internet with
+                    Arduino using the SIM800L GSM module. Ideal for IoT, remote
+                    monitoring, and communication projects. Works with AT
+                    commands for easy control.
+                  </p>
+                  <a href="" class="btn btn-primary text-uppercase"
+                    >Learn More</a
+                  >
+                </div>
+              </div>
+            </div>
+
+            <!-- card-4  -->
+            <div class="col text-center">
+              <div
+                class="card border-light px-md-5 py-md-4 px-4 py-3 text-center arduino-card"
+              >
+                <img
+                  src="images/module_page/gps.png"
+                  class="card-img-top sm-img-fluid rounded-3"
+                  alt="..."
+                />
+                <div class="card-body text-start">
+                  <h5 class="card-title text-start">NEO-6M GPS Module</h5>
+                  <p class="card-text text-start fs-6 fw-light text-muted">
+                    Track location, speed, and time with Arduino using the
+                    NEO-6M GPS module. Perfect for navigation, tracking, and
+                    outdoor projects. Provides easy-to-read NMEA data via serial
+                    communication.
+                  </p>
+                  <a href="" class="btn btn-primary text-uppercase"
+                    >Learn More</a
+                  >
+                </div>
+              </div>
+            </div>
+
+            <!-- card-5  -->
+            <div class="col text-center">
+              <div
+                class="card border-light px-md-5 py-md-4 px-4 py-3 text-center arduino-card"
+              >
+                <img
+                  src="images/module_page/nRF24L01.png"
+                  class="card-img-top sm-img-fluid rounded-3"
+                  alt="..."
+                />
+                <div class="card-body text-start">
+                  <h5 class="card-title text-start">
+                    nRF24L01 Wireless Module
+                  </h5>
+                  <p class="card-text text-start fs-6 fw-light text-muted">
+                    Enable wireless communication between Arduinos using the
+                    nRF24L01 module. Ideal for remote control, sensor networks,
+                    and IoT projects. Uses SPI communication for fast and
+                    reliable data transfer.
+                  </p>
+                  <a href="" class="btn btn-primary text-uppercase"
+                    >Learn More</a
+                  >
+                </div>
+              </div>
+            </div>
+
+            <!-- card-6 -->
+            <div class="col text-center">
+              <div
+                class="card border-light px-md-5 py-md-4 px-4 py-3 text-center arduino-card"
+              >
+                <img
+                  src="images/module_page/433 MHz.png"
+                  class="card-img-top sm-img-fluid rounded-3"
+                  alt="..."
+                />
+                <div class="card-body text-start">
+                  <h5 class="card-title text-start">433 MHz RF RX/TX Module</h5>
+                  <p class="card-text text-start fs-6 fw-light text-muted">
+                    Send and receive wireless data with Arduino using the
+                    433 MHz RF modules. Commonly used for remote controls and
+                    basic communication projects. Simple, low-cost solution for
+                    short-range wireless links.
+                  </p>
+                  <a href="" class="btn btn-primary text-uppercase"
+                    >Learn More</a
+                  >
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+      </div>
+
+      <!-- Motor & Servo Modules tab content -->
+      <div
+        class="tab-pane fade"
+        id="pills-motor"
+        role="tabpanel"
+        aria-labelledby="pills-motor-tab"
+        tabindex="0"
+      >
+        <!-- Motor & Servo Modules content -->
+        <section class="mb-5 soil-section-all">
+          <h2 class="d-flex flex-wrap section-title text-start mb-5">
+            Motor & Servo Modules
+          </h2>
+
+          <!-- card container  -->
+          <div class="row row-cols-1 row-cols-lg-3 row-cols-md-2 g-4 px-sm-4">
+            <!-- card-1 -->
+            <div class="col text-center">
+              <div
+                class="card border-light px-md-5 py-md-4 px-4 py-3 text-center arduino-card"
+              >
+                <img
+                  src="images/module_page/l293d.png"
+                  class="card-img-top sm-img-fluid rounded-3"
+                  alt="..."
+                />
+                <div class="card-body text-start">
+                  <h5 class="card-title text-start">L293D Motor Driver IC</h5>
+                  <p class="card-text text-start fs-6 fw-light text-muted">
+                    Control DC and stepper motors with Arduino using the L293D
+                    IC. Ideal for robotics, motorized projects, and automation.
+                    Allows bidirectional motor control with simple digital
+                    signals.
+                  </p>
+                  <a href="" class="btn btn-primary text-uppercase"
+                    >Learn More</a
+                  >
+                </div>
+              </div>
+            </div>
+
+            <!-- card-2 -->
+            <div class="col text-center">
+              <div
+                class="card border-light px-md-5 py-md-4 px-4 py-3 text-center arduino-card"
+              >
+                <img
+                  src="images/module_page/l293d-shield.png"
+                  class="card-img-top sm-img-fluid rounded-3"
+                  alt="..."
+                />
+                <div class="card-body text-start">
+                  <h5 class="card-title text-start">
+                    L293D Motor Driver Shield
+                  </h5>
+                  <p class="card-text text-start fs-6 fw-light text-muted">
+                    Easily control DC and stepper motors with Arduino using the
+                    L293D motor driver shield. Perfect for robotics and
+                    automation projects. Plugs directly onto Arduino for simple
+                    and convenient motor control.
+                  </p>
+                  <a href="" class="btn btn-primary text-uppercase"
+                    >Learn More</a
+                  >
+                </div>
+              </div>
+            </div>
+
+            <!-- card-3 -->
+            <div class="col text-center">
+              <div
+                class="card border-light px-md-5 py-md-4 px-4 py-3 text-center arduino-card"
+              >
+                <img
+                  src="images/module_page/28BYJ-48.png"
+                  class="card-img-top sm-img-fluid rounded-3"
+                  alt="..."
+                />
+                <div class="card-body text-start">
+                  <h5 class="card-title text-start">28BYJ-48 Stepper Motor</h5>
+                  <p class="card-text text-start fs-6 fw-light text-muted">
+                    Control precise rotation and position with Arduino using the
+                    28BYJ-48 stepper motor. Ideal for small robotics, automated
+                    systems, and DIY projects. Works well with the ULN2003
+                    driver board for easy interfacing.
+                  </p>
+                  <a href="" class="btn btn-primary text-uppercase"
+                    >Learn More</a
+                  >
+                </div>
+              </div>
+            </div>
+
+            <!-- card-4 -->
+            <div class="col text-center">
+              <div
+                class="card border-light px-md-5 py-md-4 px-4 py-3 text-center arduino-card"
+              >
+                <img
+                  src="images/module_page/serv0.webp"
+                  class="card-img-top sm-img-fluid rounded-3"
+                  alt="..."
+                />
+                <div class="card-body text-start">
+                  <h5 class="card-title text-start">Servo Motor</h5>
+                  <p class="card-text text-start fs-6 fw-light text-muted">
+                    Control precise angles and positions with Arduino using a
+                    servo motor. Perfect for robotics, automated arms, and
+                    moving parts in projects. Easy to control with PWM signals
+                    for accurate rotation.
+                  </p>
+                  <a href="" class="btn btn-primary text-uppercase"
+                    >Learn More</a
+                  >
+                </div>
+              </div>
+            </div>
+
+            <!-- card-5 -->
+            <div class="col text-center">
+              <div
+                class="card border-light px-md-5 py-md-4 px-4 py-3 text-center arduino-card"
+              >
+                <img
+                  src="images/module_page/l298n.png"
+                  class="card-img-top sm-img-fluid rounded-3"
+                  alt="..."
+                />
+                <div class="card-body text-start">
+                  <h5 class="card-title text-start">
+                    L298N Motor Driver Module
+                  </h5>
+                  <p class="card-text text-start fs-6 fw-light text-muted">
+                    Control DC and stepper motors with Arduino using the L298N
+                    module. Ideal for robotics, motorized projects, and
+                    automation. Provides bidirectional control and adjustable
+                    speed for multiple motors.
+                  </p>
+                  <a href="" class="btn btn-primary text-uppercase"
+                    >Learn More</a
+                  >
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+      </div>
+
+      <!-- Other Modules tab content -->
+      <div
+        class="tab-pane fade"
+        id="pills-other"
+        role="tabpanel"
+        aria-labelledby="pills-other-tab"
+        tabindex="0"
+      >
+        <!-- Other Modules content -->
+        <section class="mb-5 basic-pj-section-all">
+          <h2 class="d-flex flex-wrap section-title text-start mb-5">
+            Other Modules
+          </h2>
+
+          <!-- card container  -->
+          <div class="row row-cols-1 row-cols-lg-3 row-cols-md-2 g-4 px-sm-4">
+            <!-- card-1 -->
+            <div class="col text-center">
+              <div
+                class="card border-light px-md-5 py-md-4 px-4 py-3 text-center arduino-card"
+              >
+                <img
+                  src="images/module_page/1-Channel Relay Module.png"
+                  class="card-img-top sm-img-fluid rounded-3"
+                  alt="..."
+                />
+                <div class="card-body text-start">
+                  <h5 class="card-title text-start">1-Channel Relay Module</h5>
+                  <p class="card-text text-start fs-6 fw-light text-muted">
+                    Control high-voltage devices with Arduino safely using a
+                    1-channel relay module. Perfect for home automation,
+                    switching lights, fans, or appliances. Uses a digital signal
+                    to turn devices ON or OFF.
+                  </p>
+                  <a href="" class="btn btn-primary text-uppercase"
+                    >Learn More</a
+                  >
+                </div>
+              </div>
+            </div>
+
+            <!-- card-2 -->
+            <div class="col text-center">
+              <div
+                class="card border-light px-md-5 py-md-4 px-4 py-3 text-center arduino-card"
+              >
+                <img
+                  src="images/module_page/2-Channel Relay Module.png"
+                  class="card-img-top sm-img-fluid rounded-3"
+                  alt="..."
+                />
+                <div class="card-body text-start">
+                  <h5 class="card-title text-start">2-Channel Relay Module</h5>
+                  <p class="card-text text-start fs-6 fw-light text-muted">
+                    Control two high-voltage devices independently with Arduino
+                    using the 2-channel relay module. Ideal for lights, fans,
+                    and home automations. Each channel works with a simple
+                    digital signal.
+                  </p>
+                  <a href="" class="btn btn-primary text-uppercase"
+                    >Learn More</a
+                  >
+                </div>
+              </div>
+            </div>
+
+            <!-- card-3 -->
+            <div class="col text-center">
+              <div
+                class="card border-light px-md-5 py-md-4 px-4 py-3 text-center arduino-card"
+              >
+                <img
+                  src="images/module_page/Keypad Module.png"
+                  class="card-img-top sm-img-fluid rounded-3"
+                  alt="..."
+                />
+                <div class="card-body text-start">
+                  <h5 class="card-title text-start">Keypad Module</h5>
+                  <p class="card-text text-start fs-6 fw-light text-muted">
+                    Add a numeric or alphanumeric input to your Arduino projects
+                    using a keypad. Perfect for security systems, password
+                    entry, and menu navigation. Supports easy wiring with rows
+                    and columns for quick integration.
+                  </p>
+                  <a href="" class="btn btn-primary text-uppercase"
+                    >Learn More</a
+                  >
+                </div>
+              </div>
+            </div>
+
+            <!-- card-4 -->
+            <div class="col text-center">
+              <div
+                class="card border-light px-md-5 py-md-4 px-4 py-3 text-center arduino-card"
+              >
+                <img
+                  src="images/module_page/Rotary Encoder Module.png"
+                  class="card-img-top sm-img-fluid rounded-3"
+                  alt="..."
+                />
+                <div class="card-body text-start">
+                  <h5 class="card-title text-start">Rotary Encoder Module</h5>
+                  <p class="card-text text-start fs-6 fw-light text-muted">
+                    Detect rotation direction and position with Arduino using a
+                    rotary encoder. Perfect for volume controls, menu
+                    navigation, and robotics. Provides precise digital signals
+                    for turning and clicking actions.
+                  </p>
+                  <a href="" class="btn btn-primary text-uppercase"
+                    >Learn More</a
+                  >
+                </div>
+              </div>
+            </div>
+
+            <!-- card-5 -->
+            <div class="col text-center">
+              <div
+                class="card border-light px-md-5 py-md-4 px-4 py-3 text-center arduino-card"
+              >
+                <img
+                  src="images/module_page/rtc.png"
+                  class="card-img-top sm-img-fluid rounded-3"
+                  alt="..."
+                />
+                <div class="card-body text-start">
+                  <h5 class="card-title text-start">
+                    RTC (Real-Time Clock) Module
+                  </h5>
+                  <p class="card-text text-start fs-6 fw-light text-muted">
+                    Keep accurate time in your Arduino projects using an RTC
+                    module. Perfect for clocks, data logging, and scheduling
+                    tasks. Provides hours, minutes, seconds, date even when the
+                    Arduino is powered off.
+                  </p>
+                  <a href="" class="btn btn-primary text-uppercase"
+                    >Learn More</a
+                  >
+                </div>
+              </div>
+            </div>
+
+            <!-- card-6 -->
+            <div class="col text-center">
+              <div
+                class="card border-light px-md-5 py-md-4 px-4 py-3 text-center arduino-card"
+              >
+                <img
+                  src="images/module_page/sd.png"
+                  class="card-img-top sm-img-fluid rounded-3"
+                  alt="..."
+                />
+                <div class="card-body text-start">
+                  <h5 class="card-title text-start">SD Card Module</h5>
+                  <p class="card-text text-start fs-6 fw-light text-muted">
+                    Store and read data from Arduino projects using an SD card
+                    module. Perfect for logging sensor data, saving text or
+                    images, and building portable storage projects. Easy to
+                    interface via SPI communication.
+                  </p>
+                  <a href="" class="btn btn-primary text-uppercase"
+                    >Learn More</a
+                  >
+                </div>
+              </div>
+            </div>
+
+            <!-- card-7 -->
+            <div class="col text-center">
+              <div
+                class="card border-light px-md-5 py-md-4 px-4 py-3 text-center arduino-card"
+              >
+                <img
+                  src="images/module_page/Joystick Module.png"
+                  class="card-img-top sm-img-fluid rounded-3"
+                  alt="..."
+                />
+                <div class="card-body text-start">
+                  <h5 class="card-title text-start">Joystick Module</h5>
+                  <p class="card-text text-start fs-6 fw-light text-muted">
+                    Add directional control to your Arduino projects with a
+                    joystick module. Perfect for robot navigation, gaming
+                    controllers, and interactive interfaces. Provides X and Y
+                    axis analog readings and a digital button press.
+                  </p>
+                  <a href="" class="btn btn-primary text-uppercase"
+                    >Learn More</a
+                  >
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+      </div>
+    </div>
+
+    <!-- footer section -->
+    <footer>
+      <div class="row py-3 px-5 footer-ending">
+        <div
+          class="col-md-5 text-center text-lg-start fs-6 fw-light text-muted fw-bold"
+        >
+          <span>&copy; 2026 Arduino Learning Hub MM</span>
+        </div>
+
+        <div class="col-md-7">
+          <div
+            class="d-flex flex-wrap justify-content-center justify-content-lg-end"
+          >
+            <div class="me-4 fs-6">
+              <a href="#" class="text-decoration-none text-body-secondary"
+                >About</a
+              >
+            </div>
+            <div class="me-4 fs-6">
+              <a href="#" class="text-decoration-none text-body-secondary"
+                >Courses</a
+              >
+            </div>
+            <div class="me-4 fs-6">
+              <a href="#" class="text-decoration-none text-body-secondary"
+                >Blog</a
+              >
+            </div>
+            <div class="me-4 fs-6">
+              <a href="#" class="text-decoration-none text-body-secondary"
+                >Contact</a
+              >
+            </div>
+            <div class="fs-6">
+              <a
+                href="#"
+                class="text-decoration-none text-body-secondary fw-bold"
+                >Admin</a
+              >
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- up to top bottom -->
+      <!-- d-none  d-md-flex -->
+      <a href="#" class="upt-btn fs-1 d-none d-md-flex py-md-1">
+        <i class="bi bi-arrow-up-circle-fill"></i
+      ></a>
+    </footer>
 
     <!-- link with fontawsome js cdn -->
     <script
