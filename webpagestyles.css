@@ -82,8 +82,16 @@ h2 {
 }
 
 /* footer section */
-.footer-ending {
-  background-color: #ecf1f1;
+
+/* footer line */
+.footer-divider {
+  font-weight: bold;
+  width: 100%;
+  height: 1px;
+  background-color: #cfd8dc !important;
+}
+footer {
+  background-color: #ecf1f1 !important;
   border-top: 1px solid #cfd8dc;
 }
 

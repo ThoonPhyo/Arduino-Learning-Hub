@@ -1,0 +1,47 @@
+* {
+  font-family: "PT Sans", sans-serif;
+}
+
+/* social icon btn */
+.social-btn {
+  background-color: rgba(201, 203, 207, 0.2);
+  color: black !important;
+}
+.social-btn:hover {
+  background-color: #cfd8dc !important;
+}
+
+/* login */
+.login-email,
+.login-pw {
+  background-color: rgba(201, 203, 207, 0.2);
+  border: 2px solid #cfd8dc;
+}
+
+/* password */
+.ps-f-text,
+.rg-text {
+  color: #00878f !important;
+}
+
+.pw-icon {
+  /* background-color: rgba(201, 203, 207, 0.2) !important; */
+  border: 2px solid #cfd8dc;
+}
+
+.ps-f-text:hover {
+  color: #005c5f !important;
+}
+
+/* register text */
+.rg-text:hover {
+  color: #005c5f !important;
+}
+
+/* sign in btn */
+.sign-btn {
+  background-color: #00878f;
+}
+.signin-btn:hover {
+  background-color: #005c5f !important;
+}
